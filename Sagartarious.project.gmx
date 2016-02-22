@@ -8,17 +8,55 @@
   <sprites name="sprites">
     <sprite>sprites\sPlanet</sprite>
     <sprite>sprites\sprite1</sprite>
+    <sprite>sprites\sprite2</sprite>
+    <sprite>sprites\sThrust3</sprite>
+    <sprite>sprites\sThrust1</sprite>
+    <sprite>sprites\sThrust2</sprite>
+    <sprite>sprites\sprite6</sprite>
+    <sprite>sprites\sprite7_shipsall_3</sprite>
+    <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\sArrow</sprite>
+    <sprite>sprites\sAim</sprite>
+    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\sprite13</sprite>
+    <sprite>sprites\sprite15</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\ScJump.gml</script>
+    <script>scripts\ScGravity.gml</script>
+    <script>scripts\ScWalk.gml</script>
+    <script>scripts\ScSpeeds.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\oPlanet</object>
     <object>objects\oDj</object>
+    <object>objects\oShip1</object>
+    <object>objects\oPlayer</object>
     <object>objects\oPlayer1</object>
+    <object>objects\oPlayer2</object>
+    <object>objects\oPlayer3</object>
+    <object>objects\oPlayer4</object>
+    <object>objects\oTrail</object>
+    <object>objects\oArrow</object>
+    <object>objects\oArrowDead</object>
+    <object>objects\oAim</object>
+    <object>objects\oRoot</object>
+    <object>objects\oSprout</object>
+    <object>objects\oSproutOld</object>
+    <object>objects\oBranch</object>
+    <object>objects\oBranchOld</object>
+    <object>objects\oSeed</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
+    <room>rooms\room6</room>
     <room>rooms\room0</room>
+    <room>rooms\room3</room>
+    <room>rooms\rTemplate</room>
+    <room>rooms\room4</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

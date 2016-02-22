@@ -29,7 +29,7 @@
 Term = 10
 Gravity = .1
 MoveSpeed = 4
-color = c_green
+color = c_purple
 
 //init
 image_speed = .25
@@ -37,8 +37,6 @@ vsp = 0
 hsp = 0
 image_blend = color
 draw = false
-
-global.focus = id
 </string>
           </argument>
         </arguments>
@@ -96,55 +94,83 @@ vsp = 0
     
 }
 
-//define movement keys yo
+//if i'm not playing i can't move
+
+    //define movement keys yo
     Left = keyboard_check(ord('A')) 
     Right = keyboard_check(ord('D'))
     Jump = keyboard_check_pressed(ord('W'))
 
+if global.focus = id {    
+    //if i'm moving change my hsp
+    if (Left) { hsp = MoveSpeed }
+    if (Right) { hsp = -MoveSpeed }
+    
+    
+    
+    
+    //jumping
+    if (Jump) and distance_to_point(Planet.x,Planet.y) &lt; 64 {
+        vsp = -3
+    }
 
-//if i'm not playing i can't move
-if global.focus = id {
-    
-    ScWalk()
-    
-    ScJump()
 
 
     //arrows yo
     
+    
     if mouse_check_button_pressed(mb_left) { 
+    
     draw = true
-    }
+     
+       }
     
     if mouse_check_button_released(mb_left) and draw = true  {
-        draw = false
-        
-        Arrow = instance_create(x,y,oSeed)
-        Arrow.color = color
-        Arrow.direction = point_direction(x,y,mouse_x,mouse_y)
-        Arrow.image_angle = Arrow.direction
-        
-        var charge;
-        charge = (distance_to_point(mouse_x,mouse_y) / 200 )
-        
-        if charge &lt; 1 {
-            Arrow.speed = charge * 20
-        } else {
-            Arrow.speed = 20
-        }
-        
-        if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
-        
-        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
-        
-        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
-        
-        }}}
+    
+    draw = false
+    
+    Arrow = instance_create(x,y,oArrow)
+    Arrow.color = color
+    Arrow.direction = point_direction(x,y,mouse_x,mouse_y)
+    Arrow.image_angle = Arrow.direction
+    
+    var charge;
+    charge = (distance_to_point(mouse_x,mouse_y) / 200 )
+    
+    if charge &lt; 1 {
+        Arrow.speed = charge * 20
+    } else {
+        Arrow.speed = 20
+    }
+    
+    if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
+    
+    if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
+    
+    if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
+    }}}
     }
 
 }
-
-ScSpeeds()
+//apply speed
+    
+    //if i'm not moving stop my hsp (prevents you walking into orbit)
+    if Left != true and Right != true { hsp = 0 image_speed = 0 image_index = 0 } else { image_speed = .25 }
+    
+    //figure out where my vsp wants me to go
+    nvx = lengthdir_x(vsp,Down)  
+    nvy = lengthdir_y(vsp,Down)
+    //figure out where my hsp wants me to go
+    if sign(hsp) = 1 {
+    nhx = lengthdir_x(hsp,Down + 91)  
+    nhy = lengthdir_y(hsp,Down + 91)  
+    } else {
+    nhx = lengthdir_x(hsp,Down + 89)  
+    nhy = lengthdir_y(hsp,Down + 89) 
+    }
+    //Take my hsp and vsp's demands and factor them together, and then finnally actually apply speed
+    x += nhx - nvx
+    y += nhy - nvy
     
 
 

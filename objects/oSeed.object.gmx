@@ -28,6 +28,8 @@
             <string>//mass = random(10)
 mass = 5
 draw = false
+
+
 </string>
           </argument>
         </arguments>
@@ -62,6 +64,14 @@ image_angle = direction
 
 }
 
+var par;
+par = instance_place(x,y,oPlayer)
+
+if instance_exists(par) {
+
+    if color != par.color { with (par) { instance_destroy() } }
+
+    }
 </string>
           </argument>
         </arguments>

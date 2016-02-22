@@ -35,7 +35,7 @@ Down = point_direction(Planet.x,Planet.y,x,y)
 
 image_angle = Down + 180
 
-Life = 10
+Life = 5
 
 Fertile = true
 </string>

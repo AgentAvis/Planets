@@ -16,11 +16,19 @@
     <sprite>sprites\sprite7_shipsall_3</sprite>
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\sArrow</sprite>
+    <sprite>sprites\sPepsi</sprite>
     <sprite>sprites\sAim</sprite>
     <sprite>sprites\sprite11</sprite>
     <sprite>sprites\sprite12</sprite>
     <sprite>sprites\sprite13</sprite>
     <sprite>sprites\sprite15</sprite>
+    <sprite>sprites\sprite16</sprite>
+    <sprite>sprites\sprite17_Pete</sprite>
+    <sprite>sprites\sprite17_Vlad</sprite>
+    <sprite>sprites\sprite18_maxwell</sprite>
+    <sprite>sprites\sprite19_Andre</sprite>
+    <sprite>sprites\sBrain</sprite>
+    <sprite>sprites\sWiskey</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -42,6 +50,8 @@
     <object>objects\oTrail</object>
     <object>objects\oArrow</object>
     <object>objects\oArrowDead</object>
+    <object>objects\oArrowDead2</object>
+    <object>objects\oArrowDead3</object>
     <object>objects\oAim</object>
     <object>objects\oRoot</object>
     <object>objects\oSprout</object>
@@ -52,11 +62,12 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
-    <room>rooms\room6</room>
     <room>rooms\room0</room>
     <room>rooms\room3</room>
+    <room>rooms\room7</room>
     <room>rooms\rTemplate</room>
     <room>rooms\room4</room>
+    <room>rooms\room6</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

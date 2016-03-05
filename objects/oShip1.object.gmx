@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>mass = .05
+            <string>mass = 1
 </string>
           </argument>
         </arguments>
@@ -62,9 +62,11 @@ if ( Up ) { motion_add( image_angle,.1 ) }
 
 if ( Down ) { speed = speed * .9 }
 
-if collision_circle(Planet.x,Planet.y,64,id,true,false) {
+Planet = instance_nearest(x,y,oPlanet)
 
-speed = 0
+if collision_circle(Planet.x,Planet.y,64,oShip1,true,false) {
+
+move_bounce_all(true)
 
 }
 

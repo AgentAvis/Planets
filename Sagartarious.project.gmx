@@ -6,10 +6,12 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
+    <sprite>sprites\sChicken</sprite>
     <sprite>sprites\sPlanet</sprite>
     <sprite>sprites\sprite1</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\sThrust3</sprite>
+    <sprite>sprites\sMininuke</sprite>
     <sprite>sprites\sThrust1</sprite>
     <sprite>sprites\sThrust2</sprite>
     <sprite>sprites\sprite6</sprite>
@@ -18,37 +20,67 @@
     <sprite>sprites\sArrow</sprite>
     <sprite>sprites\sPepsi</sprite>
     <sprite>sprites\sAim</sprite>
-    <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\sSeed</sprite>
     <sprite>sprites\sprite12</sprite>
     <sprite>sprites\sprite13</sprite>
     <sprite>sprites\sprite15</sprite>
     <sprite>sprites\sprite16</sprite>
-    <sprite>sprites\sprite17_Pete</sprite>
-    <sprite>sprites\sprite17_Vlad</sprite>
-    <sprite>sprites\sprite18_maxwell</sprite>
-    <sprite>sprites\sprite19_Andre</sprite>
+    <sprite>sprites\sPete</sprite>
+    <sprite>sprites\sVlad</sprite>
+    <sprite>sprites\sMaxwell</sprite>
+    <sprite>sprites\sZombie</sprite>
+    <sprite>sprites\sAndre</sprite>
     <sprite>sprites\sBrain</sprite>
     <sprite>sprites\sWiskey</sprite>
+    <sprite>sprites\spChar</sprite>
+    <sprite>sprites\sMouse</sprite>
+    <sprite>sprites\sprite26</sprite>
+    <sprite>sprites\sprite27</sprite>
+    <sprite>sprites\t</sprite>
+    <sprite>sprites\sFish</sprite>
+    <sprite>sprites\sVaultBoy</sprite>
+    <sprite>sprites\sNuke</sprite>
+    <sprite>sprites\sWizzard</sprite>
+    <sprite>sprites\sManny</sprite>
+    <sprite>sprites\sPlumber</sprite>
+    <sprite>sprites\sFlower</sprite>
+    <sprite>sprites\sBooger</sprite>
+    <sprite>sprites\sFishie</sprite>
+    <sprite>sprites\sBrainBot</sprite>
+    <sprite>sprites\sCrab</sprite>
+    <sprite>sprites\sStar</sprite>
+    <sprite>sprites\sChickenMan</sprite>
+    <sprite>sprites\sDot</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
+    <script>scripts\ScPlayerStuff.gml</script>
     <script>scripts\ScJump.gml</script>
     <script>scripts\ScGravity.gml</script>
     <script>scripts\ScWalk.gml</script>
     <script>scripts\ScSpeeds.gml</script>
+    <script>scripts\ScPlayerCreate.gml</script>
+    <script>scripts\ScShoot.gml</script>
+    <script>scripts\ScNext.gml</script>
+    <script>scripts\ScSprite.gml</script>
+    <script>scripts\ScPoint.gml</script>
+    <script>scripts\ScTri.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oPlanet</object>
     <object>objects\oDj</object>
+    <object>objects\oMouse</object>
     <object>objects\oShip1</object>
     <object>objects\oPlayer</object>
     <object>objects\oPlayer1</object>
     <object>objects\oPlayer2</object>
     <object>objects\oPlayer3</object>
     <object>objects\oPlayer4</object>
+    <object>objects\oZombie</object>
     <object>objects\oTrail</object>
     <object>objects\oArrow</object>
+    <object>objects\oDot</object>
     <object>objects\oArrowDead</object>
     <object>objects\oArrowDead2</object>
     <object>objects\oArrowDead3</object>
@@ -58,16 +90,38 @@
     <object>objects\oSproutOld</object>
     <object>objects\oBranch</object>
     <object>objects\oBranchOld</object>
+    <object>objects\oNuke</object>
     <object>objects\oSeed</object>
+    <objects name="CharSelect">
+      <object>objects\oCharSelect</object>
+      <object>objects\opChar</object>
+      <object>objects\oChar1</object>
+      <object>objects\oChar2</object>
+      <object>objects\oChar3</object>
+      <object>objects\oChar4</object>
+      <object>objects\oChar5</object>
+      <object>objects\oChar6</object>
+      <object>objects\oChar7</object>
+      <object>objects\oChar8</object>
+      <object>objects\oChar9</object>
+      <object>objects\oChar10</object>
+      <object>objects\oChar11</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
+    <room>rooms\rCharSelect</room>
+    <room>rooms\room11</room>
     <room>rooms\room0</room>
     <room>rooms\room3</room>
     <room>rooms\room7</room>
-    <room>rooms\rTemplate</room>
     <room>rooms\room4</room>
     <room>rooms\room6</room>
+    <room>rooms\room8</room>
+    <room>rooms\room9</room>
+    <room>rooms\room10</room>
+    <room>rooms\room12</room>
+    <room>rooms\rTemplate</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

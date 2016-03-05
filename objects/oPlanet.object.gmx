@@ -30,11 +30,11 @@
 
 hue = random(255)
 sat = random(255)
-val1 = random(255)
-val2 = random(255)
+val = random(255)
 
-color1 = make_colour_hsv(random(255),255,255)
-color2 = make_colour_hsv(random(255),random(255),0)
+color1 = make_colour_hsv(hue,sat,val)
+//color2 = make_colour_hsv(100,000,100)
+color2 = color1
 
 image_blend = color1
 ran = 1000
@@ -92,6 +92,7 @@ ran = 1000
 if (global.debug) { draw_circle(x,y,64*image_xscale,true) } else {
 
     draw_circle_colour(x,y,64*image_xscale,color1,color2,false)
+    draw_circle_color(x,y,64*image_xscale ,c_black,c_black,true)
 
 }
 //draw_set_color(c_white)

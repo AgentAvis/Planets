@@ -25,8 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>global.debug = false
+            <string>Dz = 0
+DzDown = false
+global.debug = false
 global.focus = noone
+instance_create(x,y,oMouse)
+
 </string>
           </argument>
         </arguments>
@@ -75,6 +79,62 @@ if instance_exists(global.focus) {} else {
     
     
     }
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="8" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if room != rCharSelect {
+    
+    if instance_exists(global.focus) {
+        
+        if global.focus.object_index = oPlayer1 {
+        
+            draw_set_colour(c_green)
+            draw_text(x,y,'Player ones turn')
+            ScTri()
+            
+        }
+        if global.focus.object_index = oPlayer2 {
+        
+            draw_set_colour(c_aqua)
+            draw_text(x,y,'Player twos turn')
+            ScTri()
+            
+        }
+        if global.focus.object_index = oPlayer3 {
+        
+            draw_set_colour(c_orange)
+            draw_text(x,y,'Player threes turn')
+            ScTri()
+            
+        }
+        if global.focus.object_index = oPlayer4 {
+        
+            draw_set_colour(c_purple)
+            draw_text(x,y,'Player fours turn')
+            ScTri()
+            
+        }
+    }
+}
 </string>
           </argument>
         </arguments>

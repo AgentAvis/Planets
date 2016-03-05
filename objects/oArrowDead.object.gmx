@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>speed = 0
+image_speed = .25
+
+ScSprite()
+
+if sprite_index = sCrab { ScPoint() image_angle += 180 }
 </string>
           </argument>
         </arguments>

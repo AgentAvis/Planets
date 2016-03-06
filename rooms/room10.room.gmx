@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>33</xoffset>
-    <yoffset>-17</yoffset>
+    <xoffset>868</xoffset>
+    <yoffset>662</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -61,10 +61,8 @@
     <instance objName="oPlayer2" x="157" y="651" name="inst_D763DCCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer3" x="972" y="654" name="inst_B0562A23" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer4" x="917" y="131" name="inst_9A6C3AC5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSeed" x="484" y="383" name="inst_123B68F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSeed" x="522" y="370" name="inst_A4648D5F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSeed" x="507" y="482" name="inst_48214B71" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSeed" x="549" y="476" name="inst_D03C3389" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSeed" x="658" y="433" name="inst_8521AF87" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSeed" x="660" y="374" name="inst_2BE0B911" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSeed" x="650" y="362" name="inst_28C72935" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

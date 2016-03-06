@@ -11,6 +11,10 @@ if object_get_parent(object_index) = oPlayer {
     if Id = 9 { sprite_index = sBrainBot }
     if Id = 10 { sprite_index = sWizzard }
     if Id = 11 { sprite_index = sChickenMan }
+    if Id = 12 { sprite_index = sBeachGuy }
+    if Id = 13 { sprite_index = sKerbal }
+    if Id = 14 { sprite_index = sGordon }
+    if Id = 15 { sprite_index = sMachoman }
     //if Id = 1 { sprite_index = sVlad }
 }
 
@@ -27,6 +31,10 @@ if object_index = oArrow {
     if Id = 9 { sprite_index = sCrab }
     if Id = 10 { sprite_index = sStar }
     if Id = 11 { sprite_index = sChicken }
+    if Id = 12 { sprite_index = sBeachBall }
+    if Id = 13 { sprite_index = sFlag }
+    if Id = 14 { sprite_index = sMachoman }
+    if Id = 15 { sprite_index = sChair }
     
 }
 
@@ -43,5 +51,9 @@ if object_index = oArrowDead {
     if Id = 9 { sprite_index = sCrab }
     if Id = 10 { sprite_index = sStar }
     if Id = 11 { sprite_index = sChicken }
+    if Id = 12 { sprite_index = sBeachBall }
+    if Id = 13 { sprite_index = sFlag }
+    if Id = 14 { sprite_index = sMachoman }
+    if Id = 15 { sprite_index = sChair }
     
 }

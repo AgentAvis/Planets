@@ -133,7 +133,13 @@ y += lengthdir_y(Diz,DizDir)
         speed = 0
         changed = true
     }
-    
+    if sprite_index = sChair {
+        ScPoint()
+        instance_change(oArrowDead,true)
+        sprite_index = sChair
+        speed = 0
+        changed = true
+    }
     if changed = false { instance_change(oArrowDead,true) }
 
 } else {

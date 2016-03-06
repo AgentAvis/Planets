@@ -50,11 +50,13 @@ image_alpha = .5
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if global.focus = ID { image_alpha -= .003 visible = true } else { visible = false }
+            <string>if global.focus = ID { visible = true } else { visible = false }
 
 if image_alpha &lt; .01 { instance_destroy() }
 
 if instance_exists(ID) {} else { instance_destroy() }
+
+if global.focus = ID and mouse_check_button_pressed(mb_left) { image_alpha -= .25 }
 </string>
           </argument>
         </arguments>

@@ -29,6 +29,16 @@
         Arrow.speed = 20
     }
     
+    Px = x
+    Py = y
+    PCx = mouse_x
+    PCy = mouse_y
+    dr = point_direction(x,y,mouse_x,mouse_y)
+    if distance_to_point(mouse_x,mouse_y) > 200 { d = 200 } else { d = distance_to_point(mouse_x,mouse_y) }
+    Ppdx = x + lengthdir_x(d,dr)
+    Ppdy = y + lengthdir_y(d,dr)
+    
+    
     if object_index = oPlayer1 {
         if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
         
@@ -64,14 +74,5 @@
         if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
         }}}
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     }

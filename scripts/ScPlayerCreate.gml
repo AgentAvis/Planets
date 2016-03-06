@@ -15,3 +15,11 @@ draw = false
 //color = c_white
 Id = 0
 
+Px = 0
+Py = 0
+PCx = 0
+PCy = 0
+dr = point_direction(x,y,mouse_x,mouse_y)
+Ppdx = 0
+Ppdy = 0
+

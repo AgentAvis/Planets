@@ -3,6 +3,7 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="29" name="datafiles"/>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
@@ -17,6 +18,7 @@
     <sprite>sprites\sprite6</sprite>
     <sprite>sprites\sprite7_shipsall_3</sprite>
     <sprite>sprites\sprite8</sprite>
+    <sprite>sprites\sMachoman</sprite>
     <sprite>sprites\sArrow</sprite>
     <sprite>sprites\sPepsi</sprite>
     <sprite>sprites\sAim</sprite>
@@ -51,6 +53,12 @@
     <sprite>sprites\sStar</sprite>
     <sprite>sprites\sChickenMan</sprite>
     <sprite>sprites\sDot</sprite>
+    <sprite>sprites\sBeachGuy</sprite>
+    <sprite>sprites\sKerbal</sprite>
+    <sprite>sprites\sFlag</sprite>
+    <sprite>sprites\sBeachBall</sprite>
+    <sprite>sprites\sGordon</sprite>
+    <sprite>sprites\sChair</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -66,6 +74,7 @@
     <script>scripts\ScSprite.gml</script>
     <script>scripts\ScPoint.gml</script>
     <script>scripts\ScTri.gml</script>
+    <script>scripts\ScPlayerDraw.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oPlanet</object>
@@ -106,6 +115,10 @@
       <object>objects\oChar9</object>
       <object>objects\oChar10</object>
       <object>objects\oChar11</object>
+      <object>objects\oChar12</object>
+      <object>objects\oChar13</object>
+      <object>objects\oChar14</object>
+      <object>objects\oChar15</object>
     </objects>
   </objects>
   <rooms name="rooms">

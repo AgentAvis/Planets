@@ -59,6 +59,8 @@
     <sprite>sprites\sBeachBall</sprite>
     <sprite>sprites\sGordon</sprite>
     <sprite>sprites\sChair</sprite>
+    <sprite>sprites\sprite52_cl_360</sprite>
+    <sprite>sprites\sprite53_laracroft_360</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

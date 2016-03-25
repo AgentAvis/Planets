@@ -32,6 +32,7 @@ TimeAlive = 0
 spin = false
 image_speed = .25
 Timerr = 0
+spot = noone
 </string>
           </argument>
         </arguments>
@@ -58,11 +59,11 @@ Timerr = 0
 
 //trails
 Timerr += 1
-if Timerr &gt; 2  {
+if Timerr &gt; 3  {
 Timerr = 0
 dot = instance_create(x,y,oDot)
-with (dot) { color = other.color image_blend = color image_angle = other.image_angle ID = other.ID }
-
+with (dot) { color = other.color image_blend = color image_angle = other.image_angle ID = other.ID spot = other.spot }
+spot = dot
 
 
 }

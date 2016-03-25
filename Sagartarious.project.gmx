@@ -61,6 +61,7 @@
     <sprite>sprites\sChair</sprite>
     <sprite>sprites\sprite52_cl_360</sprite>
     <sprite>sprites\sprite53_laracroft_360</sprite>
+    <sprite>sprites\sprite54</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -77,6 +78,7 @@
     <script>scripts\ScPoint.gml</script>
     <script>scripts\ScTri.gml</script>
     <script>scripts\ScPlayerDraw.gml</script>
+    <script>scripts\ScDots.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oPlanet</object>

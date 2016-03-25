@@ -28,6 +28,10 @@
             <string>sel = oPlayer1.id
 Char = 0
 Sets = 0
+global.Player1Id = false
+global.Player2Id = false
+global.Player3Id = false
+global.Player4Id = false
 </string>
           </argument>
         </arguments>

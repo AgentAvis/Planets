@@ -63,6 +63,8 @@ ScJump()
 
 ScShoot()
 
+ScDots()
+
 }
 
 ScSpeeds()

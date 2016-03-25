@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>110</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -30,7 +30,8 @@ DzDown = false
 global.debug = false
 global.focus = noone
 instance_create(x,y,oMouse)
-
+next = false
+global.killdots = false
 </string>
           </argument>
         </arguments>
@@ -59,6 +60,8 @@ if keyboard_check_pressed(ord('R')) { room_restart() }
 
 if keyboard_check_pressed(ord('K')) { global.debug = !global.debug }
 
+if keyboard_check_pressed(ord('J')) { global.killdots = !global.killdots }
+
 if keyboard_check_pressed(ord('P')) { if room_exists(room_next(room)) room_goto_next();  }
 
 if keyboard_check_pressed(ord('O')) { if room_exists(room_previous(room)) room_goto_previous();  }
@@ -79,6 +82,32 @@ if instance_exists(global.focus) {} else {
     
     
     }
+    
+if room = rCharSelect {
+    
+    if global.Player1Id != false and
+     global.Player2Id != false and 
+     global.Player3Id != false and 
+     global.Player4Id != false {
+    
+     room_goto_next()
+     
+    }
+    
+if room != rCharSelect and room != rInit {
+
+
+if instance_number(oPlayer) &lt; 2 {
+
+next = true
+
+} else { next = false }
+    
+}
+
+}
+
+if (global.killdots) { if instance_exists(oDot) { with (oDot) { instance_destroy() }} }
 </string>
           </argument>
         </arguments>
@@ -135,6 +164,13 @@ if instance_exists(global.focus) {} else {
         }
     }
 }
+
+    if (next) {
+    
+    draw_text(x, y, "press p to continue!" )
+    
+    
+    }
 </string>
           </argument>
         </arguments>

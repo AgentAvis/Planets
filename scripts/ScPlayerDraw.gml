@@ -37,9 +37,10 @@ draw_line_width_colour(x,y,mouse_x,mouse_y,4,col1,col2)
 if global.focus = id {
     
     if Px != 0 and Py != 0 {
-    
-    draw_line( Px,Py,Ppdx,Ppdy )
-    
+    //last shot line
+        if !global.killdots {
+            draw_line_width_colour( Px,Py,Ppdx,Ppdy,2,color,c_white )
+        }
     }
 
 }

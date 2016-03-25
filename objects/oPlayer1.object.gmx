@@ -62,7 +62,9 @@ if global.focus = id {
     ScJump()
     
     ScShoot()
-
+    
+    ScDots()    
+    
 }
 
 ScSpeeds()

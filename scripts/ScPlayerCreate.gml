@@ -28,3 +28,9 @@ dr = point_direction(x,y,mouse_x,mouse_y)
 Ppdx = 0
 Ppdy = 0
 
+
+if instance_exists(oPlanet) {
+
+Planet = instance_nearest(x,y,oPlanet)
+
+} else { Planet = noone }

@@ -30,6 +30,8 @@
 Life = 5
 
 Fertile = true
+
+speed = 0
 </string>
           </argument>
         </arguments>

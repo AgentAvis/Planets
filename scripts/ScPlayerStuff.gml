@@ -1,10 +1,12 @@
 //Nearest planet
 
-if instance_exists(oPlanet) {
-
-Planet = instance_nearest(x,y,oPlanet)
-
-} else { Planet = noone }
+if Planet = noone {
+    if instance_exists(oPlanet) {
+    
+    Planet = instance_nearest(x,y,oPlanet)
+    
+    } else { Planet = noone }
+}
 
 //where is down
 Down = point_direction(Planet.x,Planet.y,x,y)

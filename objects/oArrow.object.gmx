@@ -83,18 +83,24 @@ TimeAlive += 1
 
 if TimeAlive &gt; room_speed * 20 { /* instance_destroy() */ }
 
-Plan = instance_place(x,y,oPlanet)
+nx = lengthdir_x(speed,direction)
+ny = lengthdir_x(speed,direction)
 
-if instance_exists(Plan) {
+
+//Plan = collision_line( x,y,nx,ny,oPlanet,true,true, )
+//Plan = instance_place(x ,y ,oPlanet)
+
+if place_meeting(x,y,oPlanet) {
 
 hsp = hspeed
 vsp = vspeed
-speed = 0
-Diz = distance_to_object(Plan)
-DizDir = point_direction(x,y,Plan.x,Plan.y)
+//speed = 0
+//snap
+Diz = distance_to_object(hsp + vsp)
+//DizDir = point_direction(x,y,Plan.x,Plan.y)
 
-x += lengthdir_x(Diz,DizDir)
-y += lengthdir_y(Diz,DizDir)
+//x += lengthdir_x(Diz,DizDir)
+//y += lengthdir_y(Diz,DizDir)
 
 
     if sprite_index = sSeed {

@@ -39,7 +39,7 @@ if global.focus = id {
     if Px != 0 and Py != 0 {
     //last shot line
         if !global.killdots {
-            draw_line_width_colour( Px,Py,Ppdx,Ppdy,2,color,c_white )
+            draw_line_width_colour( Px,Py,Ppdx,Ppdy,2,c_black,color )
         }
     }
 

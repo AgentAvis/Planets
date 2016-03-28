@@ -71,7 +71,15 @@
     <sprite>sprites\sPlanet2</sprite>
     <sprite>sprites\sPlanet3</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\b7</background>
+    <background>background\b6</background>
+    <background>background\b5</background>
+    <background>background\b4</background>
+    <background>background\b3</background>
+    <background>background\b2</background>
+    <background>background\b1</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\ScPlayerStuff.gml</script>
@@ -142,7 +150,6 @@
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
-    <room>rooms\room11</room>
     <room>rooms\room0</room>
     <room>rooms\room3</room>
     <room>rooms\room7</room>
@@ -152,6 +159,7 @@
     <room>rooms\room9</room>
     <room>rooms\room10</room>
     <room>rooms\room12</room>
+    <room>rooms\room11</room>
     <room>rooms\rTemplate</room>
   </rooms>
   <help>

@@ -47,6 +47,16 @@ if index = 2 { sprite_index = sPlanet2 }
 if index = 3 { sprite_index = sPlanet3 }
 
 C = c_red
+
+br = ceil(random(7))
+if br = 1 { background_index[0]= b1 }
+if br = 2 { background_index[0]= b2 }
+if br = 3 { background_index[0]= b3 }
+if br = 4 { background_index[0]= b4 }
+if br = 5 { background_index[0]= b5 }
+if br = 6 { background_index[0]= b6 }
+if br = 7 { background_index[0]= b7 }
+
 </string>
           </argument>
         </arguments>
@@ -98,6 +108,7 @@ C = c_red
 
 if (global.debug) { draw_circle(x,y,64*image_xscale,true) } else {
     
+    draw_set_alpha(1);
     if sprite_index = sPlanet3 {
     C = make_colour_hsv(29,71.2,228.1)
     }

@@ -54,15 +54,17 @@ color = c_purple
 
 ScSprite()
 
+if room != rCharSelect { if global.Player4Id = false { instance_destroy() }}
+
 if global.focus = id {
+        
+    ScWalk()
+        
+    ScJump()
     
-ScWalk()
+    ScShoot()
     
-ScJump()
-
-ScShoot()
-
-//ScDots()
+    //ScDots()
 
 }
 

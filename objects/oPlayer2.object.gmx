@@ -55,15 +55,17 @@ color = c_aqua
 
 ScSprite()
 
+if room != rCharSelect { if global.Player2Id = false { instance_destroy() }}
+
 if global.focus = id {
+        
+    ScWalk()
+        
+    ScJump()
     
-ScWalk()
+    ScShoot()
     
-ScJump()
-
-ScShoot()
-
-//ScDots()
+    //ScDots()
 
 }
 

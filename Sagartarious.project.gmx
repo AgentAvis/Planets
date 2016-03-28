@@ -95,6 +95,7 @@
     <script>scripts\ScTri.gml</script>
     <script>scripts\ScPlayerDraw.gml</script>
     <script>scripts\ScDots.gml</script>
+    <script>scripts\ScSpawnPlayer.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oVortex</object>
@@ -150,6 +151,7 @@
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
+    <room>rooms\room11</room>
     <room>rooms\room0</room>
     <room>rooms\room3</room>
     <room>rooms\room7</room>
@@ -159,7 +161,7 @@
     <room>rooms\room9</room>
     <room>rooms\room10</room>
     <room>rooms\room12</room>
-    <room>rooms\room11</room>
+    <room>rooms\rRandom</room>
     <room>rooms\rTemplate</room>
   </rooms>
   <help>

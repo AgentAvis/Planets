@@ -57,13 +57,19 @@ shr = false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scale += .1
-if scale &gt; .75 {scale -= .05}
-if scale &gt; 1 { shr = true }
-if shr { scale -= .3 }
-if scale &lt; 0 { instance_destroy() }
-x = par.x
-y = par.y
+            <string>if instance_exists(par) { 
+    scale += .1
+    if scale &gt; .75 {scale -= .05}
+    if scale &gt; 1 { shr = true }
+    if shr { scale -= .3 }
+    if scale &lt; 0 { instance_destroy() }
+    x = par.x
+    y = par.y
+} else {
+
+instance_destroy()
+
+}
 </string>
           </argument>
         </arguments>

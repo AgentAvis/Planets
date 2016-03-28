@@ -39,6 +39,9 @@ vsp = 0
     Left = keyboard_check(ord('A')) 
     Right = keyboard_check(ord('D'))
     Jump = keyboard_check_pressed(ord('W'))
+    
+
+   
 
 
 

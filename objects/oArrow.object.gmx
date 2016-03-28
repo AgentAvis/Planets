@@ -90,7 +90,9 @@ ny = lengthdir_x(speed,direction)
 //Plan = collision_line( x,y,nx,ny,oPlanet,true,true, )
 //Plan = instance_place(x ,y ,oPlanet)
 
-if place_meeting(x,y,oPlanet) {
+Jerry = instance_place(x,y,oPlanet)
+
+if instance_exists(Jerry) {
 
 hsp = hspeed
 vsp = vspeed
@@ -102,6 +104,7 @@ Diz = distance_to_object(hsp + vsp)
 //x += lengthdir_x(Diz,DizDir)
 //y += lengthdir_y(Diz,DizDir)
 
+planetihit = Jerry
 
     if sprite_index = sSeed {
         speed = 0 instance_change(oRoot,true)

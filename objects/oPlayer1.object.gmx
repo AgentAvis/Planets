@@ -29,6 +29,7 @@
 if room != rCharSelect { Id = global.Player1Id } 
 global.focus = id
 color = c_green
+
 </string>
           </argument>
         </arguments>
@@ -54,6 +55,8 @@ color = c_green
             <string>ScPlayerStuff()
 
 ScSprite()
+
+if room != rCharSelect { if global.Player1Id = false { instance_destroy() }}
 
 if global.focus = id {
         

@@ -16,6 +16,35 @@
         nhy = lengthdir_y(hsp,Down + 89) 
         }
     } else { nhx = 0 nhy = 0 }
+    
     //Take my hsp and vsp's demands and factor them together, and then finnally actually apply speed
-    x += nhx - nvx
-    y += nhy - nvy
+    x += nhx - nvx 
+    y += nhy - nvy 
+    
+    x += Planet.hspeed
+    y += Planet.vspeed
+    
+    ////add planets speeds
+    //x += 
+    //y += Planet.HSpeed
+    
+    //
+    
+    //x = nx
+    //y = ny
+    
+    
+    /*
+    cy = Planet.nx
+    cx = Planet.ny
+    vx += nhx - nvx 
+    vy += nhy - nvy
+    x = cx + vx
+    y = cy + vy
+    */
+    
+    
+    
+    
+    
+    

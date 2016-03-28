@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>
+randomize()
+
 //color = make_colour_hsv(random(255), random(255), 255)
 
 hue = random(255)
@@ -48,6 +50,7 @@ if index = 3 { sprite_index = sPlanet3 }
 
 C = c_red
 
+//set the backround
 br = ceil(random(7))
 if br = 1 { background_index[0]= b1 }
 if br = 2 { background_index[0]= b2 }
@@ -56,6 +59,21 @@ if br = 4 { background_index[0]= b4 }
 if br = 5 { background_index[0]= b5 }
 if br = 6 { background_index[0]= b6 }
 if br = 7 { background_index[0]= b7 }
+
+p = false
+
+dg = false
+
+px = x
+py = y
+nx = 0
+ny = 0
+HSpeed = 0
+VSpeed = 0
+Orbit = 0
+Direction = 0
+distance = false
+
 
 </string>
           </argument>
@@ -81,7 +99,55 @@ if br = 7 { background_index[0]= b7 }
             <kind>1</kind>
             <string>mass = image_xscale
 
-//ScGravity()
+if dg {ScGravity()}
+
+if (p) {
+    
+    n = instance_nearest(x,y,oPlanet)
+    if place_meeting(x,y,oPlanet) {
+        
+        if random (10) &lt; 1 {
+            x = random_range(100,room_width-100)
+            y = random_range(100,room_height-100)
+        }
+            
+    } else { p = false ScSpawnPlayer() }
+   
+    
+
+}
+/*
+if px != x or py != y 
+{
+
+if distance = false { distance = distance_to_point(px,py) } 
+
+
+//Direction = point_direction(x,y,px,py)
+
+Direction = image_angle
+
+image_angle += 1
+
+nx = px + lengthdir_x(distance,Direction)
+
+ny = py + lengthdir_y(distance,Direction)
+
+//oldx = x
+//oldy = y
+
+x = nx
+
+y = ny
+
+//newx = x
+//newy = y
+//HSpeed = newx - oldx
+//VSpeed = newy - oldy
+
+
+}
+*/
 </string>
           </argument>
         </arguments>
@@ -121,8 +187,10 @@ if (global.debug) { draw_circle(x,y,64*image_xscale,true) } else {
     draw_circle_colour(x,y,64*image_xscale,C,C,false)
     
     draw_circle_colour(x,y,64*image_xscale ,c_black,c_black,true)
-    draw_sprite_ext(sprite_index,0,x,y,image_xscale * .9,image_yscale * .9,image_angle,c_white,1)
+    draw_sprite_ext(sprite_index,0,x,y,image_xscale * .9,image_yscale * .9,0,c_white,1)
 }
+
+draw_point(px,py)
 //draw_set_color(c_white)
 //draw_circle(x,y,750,true)
 //draw_circle(x,y,900,true)

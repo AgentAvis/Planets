@@ -73,6 +73,9 @@ Fertile = false
 
 Life = 0
 }
+
+x += planetihit.hspeed
+y += planetihit.vspeed
 </string>
           </argument>
         </arguments>

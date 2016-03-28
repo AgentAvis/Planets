@@ -65,7 +65,9 @@ instance_change(oBranchOld,true)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>x += planetihit.hspeed
+y += planetihit.vspeed
+</string>
           </argument>
         </arguments>
       </action>

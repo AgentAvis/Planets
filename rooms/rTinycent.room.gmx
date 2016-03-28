@@ -16,9 +16,9 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1362</w>
-    <h>883</h>
-    <showGrid>-1</showGrid>
+    <w>1000</w>
+    <h>600</h>
+    <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -26,9 +26,9 @@
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>-19</xoffset>
-    <yoffset>-236</yoffset>
+    <page>1</page>
+    <xoffset>-111</xoffset>
+    <yoffset>-219</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -51,15 +51,27 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="oPlanet" x="480" y="384" name="inst_8C46FFD2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer1" x="128" y="384" name="inst_94B338FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="192" y="384" name="inst_471ACCF4" locked="0" code="//px = x + 100&#xA;dg = true&#xA;vspeed = 4&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="768" y="384" name="inst_15AF7590" locked="0" code="//px = x + 100&#xA;dg = true&#xA;vspeed = -4&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer2" x="832" y="384" name="inst_3BCA46EE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer3" x="480" y="32" name="inst_9F3D9F85" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlayer4" x="480" y="736" name="inst_89B1FD2E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="480" y="96" name="inst_B9D0516F" locked="0" code="//px = x + 100&#xA;dg = true&#xA;hspeed = -4&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="480" y="672" name="inst_3EA5A2D7" locked="0" code="//px = x + 100&#xA;dg = true&#xA;hspeed = 4&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer1" x="113" y="492" name="inst_8D8BA442" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="864" y="480" name="inst_9FA5C16A" locked="0" code="//hspeed = -5&#xA;" scaleX="1.5" scaleY="1.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="160" y="416" name="inst_FE17E523" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="576" y="256" name="inst_06876C44" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="512" y="704" name="inst_2DDD42AF" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="448" y="480" name="inst_6202E5FC" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer2" x="897" y="363" name="inst_E7EF90AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer3" x="569" y="198" name="inst_CF71BCEA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer4" x="509" y="753" name="inst_C47A1478" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="96" y="413" name="inst_5FA72614" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="197" y="461" name="inst_E80C95E8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="188" y="377" name="inst_1C039C75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="438" y="457" name="inst_123CAA7F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="468" y="500" name="inst_97928EBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="536" y="687" name="inst_236B4E75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="774" y="498" name="inst_8F7B212F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="863" y="574" name="inst_080EA8A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="928" y="419" name="inst_78FBA688" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="605" y="260" name="inst_3BDD50AD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="560" y="278" name="inst_D23913DF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSeed" x="562" y="233" name="inst_A060E324" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

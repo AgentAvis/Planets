@@ -71,6 +71,9 @@ sprout.image_angle = image_angle + 180 + random_range(-20,20)
 
 
 }
+
+x += planetihit.hspeed
+y += planetihit.vspeed
 </string>
           </argument>
         </arguments>

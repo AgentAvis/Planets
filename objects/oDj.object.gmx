@@ -34,6 +34,8 @@ next = false
 global.killdots = false
 Gimerr = 0
 audio_play_sound(MystOnTheMoor,1,true)
+
+global.Orbit = 1
 </string>
           </argument>
         </arguments>

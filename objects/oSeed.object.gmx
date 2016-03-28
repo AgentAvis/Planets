@@ -55,9 +55,9 @@ Id = 1
             <string>//image_blend = color
 
 
+planetihit = instance_place(x,y,oPlanet)
 
-
-if place_meeting(x,y,oPlanet) { speed = 0 instance_change(oRoot,true) } else {
+if instance_exists(planetihit) { speed = 0 instance_change(oRoot,true) } else {
 
 ScGravity()
 image_angle = direction

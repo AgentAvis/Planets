@@ -30,7 +30,7 @@
     } else {
         Arrow.speed = 20
     }
-    
+        Arrow.speed += Planet.hspeed + Planet.vspeed
     Px = x
     Py = y
     PCx = mouse_x

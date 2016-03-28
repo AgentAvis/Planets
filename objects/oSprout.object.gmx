@@ -65,6 +65,9 @@ sprout.image_angle = Down + random_range(-50,50)
 
 instance_change(oSproutOld,true)
 } else { image_angle = point_direction(Planet.x,Planet.y,x,y) }
+
+x += planetihit.hspeed
+y += planetihit.vspeed
 </string>
           </argument>
         </arguments>

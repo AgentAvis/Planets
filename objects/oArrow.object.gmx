@@ -57,14 +57,21 @@ spot = noone
             <kind>1</kind>
             <string>//image_blend = color
 
-//trails
-Timerr += 1
-if Timerr &gt; 3  {
-Timerr = 0
-dot = instance_create(x,y,oDot)
-with (dot) { color = other.color image_blend = color image_angle = other.image_angle ID = other.ID spot = other.spot }
-spot = dot
-
+if room != rMenu {
+    //trails
+    Timerr += 1
+    if Timerr &gt; 3  {
+        Timerr = 0
+        dot = instance_create(x,y,oDot)
+        with (dot) {
+        color = other.color
+        image_blend = color
+        image_angle = other.image_angle 
+        ID = other.ID
+        spot = other.spot 
+    }
+    spot = dot
+}
 
 }
 

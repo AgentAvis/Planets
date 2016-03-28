@@ -63,7 +63,7 @@ ScJump()
 
 ScShoot()
 
-ScDots()
+//ScDots()
 
 }
 

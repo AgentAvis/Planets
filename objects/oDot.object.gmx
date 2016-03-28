@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>image_xscale = .75
 image_yscale = .75
-image_alpha = .5
+image_alpha = 1
 </string>
           </argument>
         </arguments>
@@ -84,8 +84,17 @@ if image_alpha &lt; .01 { instance_destroy() }
 
 
 if instance_exists(spot) {
+
+    if image_alpha != 1 { draw_set_alpha(.5) } else { draw_set_alpha(1)}
     draw_line_colour(x,y,spot.x,spot.y,color,color)
+    draw_set_alpha(1);    
+    
 }
+
+
+
+
+
 </string>
           </argument>
         </arguments>

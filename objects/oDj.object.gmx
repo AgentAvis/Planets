@@ -32,6 +32,8 @@ global.focus = noone
 instance_create(x,y,oMouse)
 next = false
 global.killdots = false
+Gimerr = 0
+audio_play_sound(MystOnTheMoor,1,true)
 </string>
           </argument>
         </arguments>
@@ -108,6 +110,47 @@ next = true
 }
 
 if (global.killdots) { if instance_exists(oDot) { with (oDot) { instance_destroy() }} }
+    
+    //title
+    
+    if room = rMenu {
+        
+        //if instance_number(oArrow) &gt; 10 { with (instance_nearest(x,y,oArrow)) { instance_destroy() } }
+        with (oArrow) {
+        
+            if x &gt; room_width + 200 or x &lt; 0 - 200 or y &gt; room_height + 200 or y &lt; 0 - 200 { instance_destroy() }
+
+        }
+        
+        
+        global.killdots = false
+        
+        Gimerr += 1
+        
+        if Gimerr &gt; room_speed * 1 {
+        
+        Gimerr = 0
+        
+        //var X,Y,hspd,vspd;
+        Ar = instance_create(room_width / 2,room_height / 2,oArrow) 
+        Ar.hspeed = random_range(-10,10)
+        Ar.vspeed = random_range(-10,10)
+        Ar.Id = ceil(random(15))
+        Ar.ID = id
+        
+        with (Ar) {
+            Color = c_white
+            color = c_white
+            ScSprite()
+        }
+        
+        
+        
+        }
+    
+  
+    
+}
 </string>
           </argument>
         </arguments>

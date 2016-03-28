@@ -1,5 +1,10 @@
 ScPoint()
 
+depth = 1
+
+bib = instance_create(x,y,oPlayerSpawn)
+bib.par = id
+
 //tweakables
 Term = 10
 Gravity = .1

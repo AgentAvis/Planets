@@ -63,7 +63,7 @@ if global.focus = id {
     
     ScShoot()
     
-    ScDots()    
+      
     
 }
 

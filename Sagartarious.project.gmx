@@ -5,7 +5,9 @@
   </Configs>
   <datafiles number="29" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\MystOnTheMoor</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sChicken</sprite>
     <sprite>sprites\sPlanet</sprite>
@@ -62,6 +64,12 @@
     <sprite>sprites\sprite52_cl_360</sprite>
     <sprite>sprites\sprite53_laracroft_360</sprite>
     <sprite>sprites\sprite54</sprite>
+    <sprite>sprites\sTitle</sprite>
+    <sprite>sprites\sContinue</sprite>
+    <sprite>sprites\sVortex</sprite>
+    <sprite>sprites\sPlanet1</sprite>
+    <sprite>sprites\sPlanet2</sprite>
+    <sprite>sprites\sPlanet3</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -81,6 +89,8 @@
     <script>scripts\ScDots.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\oVortex</object>
+    <object>objects\oPlayerSpawn</object>
     <object>objects\oPlanet</object>
     <object>objects\oDj</object>
     <object>objects\oMouse</object>
@@ -104,6 +114,7 @@
     <object>objects\oBranch</object>
     <object>objects\oBranchOld</object>
     <object>objects\oNuke</object>
+    <object>objects\oTitle</object>
     <object>objects\oSeed</object>
     <objects name="CharSelect">
       <object>objects\oCharSelect</object>
@@ -124,9 +135,12 @@
       <object>objects\oChar14</object>
       <object>objects\oChar15</object>
     </objects>
+    <object>objects\oContinue</object>
+    <object>objects\oLineTest</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
+    <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
     <room>rooms\room11</room>
     <room>rooms\room0</room>

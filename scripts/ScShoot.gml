@@ -9,6 +9,8 @@
      
        }
     
+    ScDots()     
+       
     if mouse_check_button_released(mb_left) and draw = true  {
     
     draw = false

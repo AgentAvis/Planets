@@ -150,7 +150,6 @@
   <rooms name="rooms">
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
-    <room>rooms\rPool</room>
     <room>rooms\rCharSelect</room>
     <room>rooms\rTinycent</room>
     <room>rooms\rDonut</room>

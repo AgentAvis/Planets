@@ -91,7 +91,7 @@ if instance_exists(spot) {
     
 }
 
-
+draw_set_alpha(1);
 
 
 

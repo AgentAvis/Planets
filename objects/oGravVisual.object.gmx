@@ -3,41 +3,11 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
-  <persistent>0</persistent>
+  <depth>1000</depth>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-//draw_set_alpha(1);
-c1 = make_colour_hsv(0,255,255)
-c2 = make_colour_hsv(0,255,255)
-c3 = make_colour_hsv(0,255,255)
-
-//draw_set_alpha(.25);
-c4 = make_colour_hsv(0,255,255)
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
@@ -55,15 +25,33 @@ c4 = make_colour_hsv(0,255,255)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>cx = room_width / 2
-cy = room_width / 2
-
-d = 100
-
-draw_line_width_colour(cx,cy,cx + d,cy + d,3,c1,c1)
-draw_line_width_colour(cx,cy,cx - d,cy - d,3,c2,c2)
-draw_line_width_colour(cx,cy,cx - d,cy + d,3,c3,c3)
-draw_line_width_colour(cx,cy,cx + d,cy - d,3,c4,c4)
+            <string>with ( oPlanet ) {
+    
+    if (global.debug) {
+    
+                
+                
+                with (other) {
+                    bran = other.mass * 750
+                    hx = other.x
+                    hy = other.y
+                    
+                    draw_set_alpha( .025 * image_xscale );
+                    draw_set_colour(c_blue)
+                    draw_circle(hx,hy,bran * .9,false)
+                    draw_circle(hx,hy,bran * .8,false)
+                    draw_circle(hx,hy,bran * .7,false)
+                    draw_circle(hx,hy,bran * .6,false)
+                    draw_circle(hx,hy,bran * .5,false)
+                    draw_circle(hx,hy,bran * .4,false)
+                    draw_circle(hx,hy,bran * .3,false)
+                    draw_circle(hx,hy,bran * .2,false)
+                    draw_circle(hx,hy,bran * .1,false)
+                    draw_set_alpha(1);
+                }
+    }
+    
+}
 </string>
           </argument>
         </arguments>

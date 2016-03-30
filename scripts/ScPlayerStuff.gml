@@ -36,9 +36,9 @@ vsp = 0
 //if i'm not playing i can't move ???
 
 //define movement keys yo
-    Left = keyboard_check(ord('A')) 
-    Right = keyboard_check(ord('D'))
-    Jump = keyboard_check_pressed(ord('W'))
+    Left = keyboard_check(ord('A')) + keyboard_check(vk_right)
+    Right = keyboard_check(ord('D')) + keyboard_check(vk_left)
+    Jump = keyboard_check_pressed(ord('W')) + keyboard_check(vk_up)
     
 
    

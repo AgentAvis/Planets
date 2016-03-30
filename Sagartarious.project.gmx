@@ -145,14 +145,17 @@
     </objects>
     <object>objects\oContinue</object>
     <object>objects\oLineTest</object>
+    <object>objects\oGravVisual</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
+    <room>rooms\room19</room>
     <room>rooms\rTinycent</room>
+    <room>rooms\rOptions</room>
+    <room>rooms\room21</room>
     <room>rooms\rDonut</room>
-    <room>rooms\room17</room>
     <room>rooms\rSpaceGame</room>
     <room>rooms\rTriLevel</room>
     <room>rooms\rDividedSpaceGame</room>
@@ -161,6 +164,7 @@
     <room>rooms\rOrbitsTwo</room>
     <room>rooms\rFeild</room>
     <room>rooms\rShip</room>
+    <room>rooms\rComplication</room>
     <room>rooms\rMoons</room>
     <room>rooms\rOrbitsOne</room>
     <room>rooms\rRandom</room>

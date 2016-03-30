@@ -9,67 +9,64 @@
     <sound>sound\MystOnTheMoor</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\sChicken</sprite>
-    <sprite>sprites\sPlanet</sprite>
-    <sprite>sprites\sprite1</sprite>
-    <sprite>sprites\sprite2</sprite>
-    <sprite>sprites\sThrust3</sprite>
-    <sprite>sprites\sMininuke</sprite>
-    <sprite>sprites\sThrust1</sprite>
-    <sprite>sprites\sThrust2</sprite>
-    <sprite>sprites\sprite6</sprite>
-    <sprite>sprites\sprite7_shipsall_3</sprite>
-    <sprite>sprites\sprite8</sprite>
-    <sprite>sprites\sMachoman</sprite>
-    <sprite>sprites\sArrow</sprite>
-    <sprite>sprites\sPepsi</sprite>
-    <sprite>sprites\sAim</sprite>
-    <sprite>sprites\sSeed</sprite>
-    <sprite>sprites\sprite12</sprite>
-    <sprite>sprites\sprite13</sprite>
-    <sprite>sprites\sprite15</sprite>
-    <sprite>sprites\sprite16</sprite>
-    <sprite>sprites\sPete</sprite>
-    <sprite>sprites\sVlad</sprite>
-    <sprite>sprites\sMaxwell</sprite>
-    <sprite>sprites\sZombie</sprite>
-    <sprite>sprites\sAndre</sprite>
-    <sprite>sprites\sBrain</sprite>
-    <sprite>sprites\sWiskey</sprite>
-    <sprite>sprites\spChar</sprite>
+    <sprites name="Projectiles">
+      <sprite>sprites\sSeed</sprite>
+      <sprite>sprites\sPepsi</sprite>
+      <sprite>sprites\sBrain</sprite>
+      <sprite>sprites\sArrow</sprite>
+      <sprite>sprites\sMininuke</sprite>
+      <sprite>sprites\sprite2</sprite>
+      <sprite>sprites\sFishie</sprite>
+      <sprite>sprites\sBeachBall</sprite>
+      <sprite>sprites\sFlag</sprite>
+      <sprite>sprites\sChair</sprite>
+      <sprite>sprites\sprite54</sprite>
+      <sprite>sprites\sChicken</sprite>
+      <sprite>sprites\sStar</sprite>
+      <sprite>sprites\sDot</sprite>
+      <sprite>sprites\sCrab</sprite>
+      <sprite>sprites\sWiskey</sprite>
+      <sprite>sprites\sBooger</sprite>
+      <sprite>sprites\sFlower</sprite>
+      <sprite>sprites\sNuke</sprite>
+      <sprite>sprites\sAim</sprite>
+    </sprites>
+    <sprites name="People">
+      <sprite>sprites\sprite1</sprite>
+      <sprite>sprites\sVlad</sprite>
+      <sprite>sprites\sMaxwell</sprite>
+      <sprite>sprites\sAndre</sprite>
+      <sprite>sprites\sVaultBoy</sprite>
+      <sprite>sprites\sFish</sprite>
+      <sprite>sprites\sBrainBot</sprite>
+      <sprite>sprites\sChickenMan</sprite>
+      <sprite>sprites\sManny</sprite>
+      <sprite>sprites\sPlumber</sprite>
+      <sprite>sprites\sWizzard</sprite>
+      <sprite>sprites\sZombie</sprite>
+      <sprite>sprites\sGordon</sprite>
+      <sprite>sprites\spChar</sprite>
+      <sprite>sprites\sKerbal</sprite>
+      <sprite>sprites\sPete</sprite>
+      <sprite>sprites\sBeachGuy</sprite>
+      <sprite>sprites\sMachoman</sprite>
+    </sprites>
+    <sprite>sprites\sCL</sprite>
+    <sprite>sprites\sLara</sprite>
+    <sprites name="Environment">
+      <sprite>sprites\sPlanet</sprite>
+      <sprite>sprites\sprite13</sprite>
+      <sprite>sprites\sprite16</sprite>
+      <sprite>sprites\sprite15</sprite>
+      <sprite>sprites\sPlanet3</sprite>
+      <sprite>sprites\sVortex</sprite>
+      <sprite>sprites\sprite12</sprite>
+      <sprite>sprites\sPlanet1</sprite>
+      <sprite>sprites\sprite7_shipsall_3</sprite>
+      <sprite>sprites\sPlanet2</sprite>
+    </sprites>
     <sprite>sprites\sMouse</sprite>
-    <sprite>sprites\sprite26</sprite>
-    <sprite>sprites\sprite27</sprite>
-    <sprite>sprites\t</sprite>
-    <sprite>sprites\sFish</sprite>
-    <sprite>sprites\sVaultBoy</sprite>
-    <sprite>sprites\sNuke</sprite>
-    <sprite>sprites\sWizzard</sprite>
-    <sprite>sprites\sManny</sprite>
-    <sprite>sprites\sPlumber</sprite>
-    <sprite>sprites\sFlower</sprite>
-    <sprite>sprites\sBooger</sprite>
-    <sprite>sprites\sFishie</sprite>
-    <sprite>sprites\sBrainBot</sprite>
-    <sprite>sprites\sCrab</sprite>
-    <sprite>sprites\sStar</sprite>
-    <sprite>sprites\sChickenMan</sprite>
-    <sprite>sprites\sDot</sprite>
-    <sprite>sprites\sBeachGuy</sprite>
-    <sprite>sprites\sKerbal</sprite>
-    <sprite>sprites\sFlag</sprite>
-    <sprite>sprites\sBeachBall</sprite>
-    <sprite>sprites\sGordon</sprite>
-    <sprite>sprites\sChair</sprite>
-    <sprite>sprites\sprite52_cl_360</sprite>
-    <sprite>sprites\sprite53_laracroft_360</sprite>
-    <sprite>sprites\sprite54</sprite>
     <sprite>sprites\sTitle</sprite>
-    <sprite>sprites\sContinue</sprite>
-    <sprite>sprites\sVortex</sprite>
-    <sprite>sprites\sPlanet1</sprite>
-    <sprite>sprites\sPlanet2</sprite>
-    <sprite>sprites\sPlanet3</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b7</background>
@@ -143,6 +140,8 @@
       <object>objects\oChar13</object>
       <object>objects\oChar14</object>
       <object>objects\oChar15</object>
+      <object>objects\oChar16</object>
+      <object>objects\oChar17</object>
     </objects>
     <object>objects\oContinue</object>
     <object>objects\oLineTest</object>
@@ -153,6 +152,7 @@
     <room>rooms\rCharSelect</room>
     <room>rooms\rTinycent</room>
     <room>rooms\rDonut</room>
+    <room>rooms\room17</room>
     <room>rooms\rSpaceGame</room>
     <room>rooms\rTriLevel</room>
     <room>rooms\rDividedSpaceGame</room>
@@ -164,6 +164,7 @@
     <room>rooms\rMoons</room>
     <room>rooms\rOrbitsOne</room>
     <room>rooms\rRandom</room>
+    <room>rooms\rTest</room>
     <room>rooms\rTemplate</room>
   </rooms>
   <help>

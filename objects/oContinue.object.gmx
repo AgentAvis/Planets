@@ -46,6 +46,25 @@ draw_set_colour( c_red );
 draw_text( 0,0 + 25, " There are no players selected, go back to character selection by pressing O on your keyboard" )
 
 }
+
+if room != rMenu and room != rCharSelect {
+
+draw_set_halign(fa_center);
+draw_set_color(c_gray);
+
+draw_text(room_width / 2, 50,room_get_name(room))
+
+}
+
+if room = rCharSelect {
+
+draw_set_halign(fa_center);
+draw_set_colour(c_gray);
+draw_text(room_width / 2, room_height / 2, " Click on the above characters to select them, if you leave a character blank they will not spawn in the game")
+draw_text(room_width / 2, room_height / 2 + 14, " (to allow you to only play with 2 players for example)")
+draw_text(room_width / 2, room_height / 2 + 28, " Press R to restart the selection process if you mess up!")
+
+}
 </string>
           </argument>
         </arguments>

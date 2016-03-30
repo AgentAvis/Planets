@@ -2,7 +2,7 @@ with (oPlanet) {
         
         mass = image_xscale
         
-        if id = other.id { } else {
+        if id = other.id  { } else {
 
         var dis;
         dis = distance_to_object(other)
@@ -28,9 +28,10 @@ with (oPlanet) {
             if dis < ran *.2 { grav = .09 }
             if dis < ran *.1 { grav = .1 } 
             with (other) {
+                if other.dg and object_index = oPlanet {} else {
                 var force;
                 force = grav * pmass * mass
                 motion_add(point_direction(x,y,other.x,other.y,),force)
-            }
+            }}
         }
     }    }

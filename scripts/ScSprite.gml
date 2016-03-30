@@ -15,6 +15,8 @@ if object_get_parent(object_index) = oPlayer {
     if Id = 13 { sprite_index = sKerbal }
     if Id = 14 { sprite_index = sGordon }
     if Id = 15 { sprite_index = sMachoman }
+    if Id = 16 { sprite_index = sCL }
+    if Id = 17 { sprite_index = sLara }
     //if Id = 1 { sprite_index = sVlad }
 }
 
@@ -35,7 +37,8 @@ if object_index = oArrow {
     if Id = 13 { sprite_index = sFlag }
     if Id = 14 { sprite_index = sMachoman }
     if Id = 15 { sprite_index = sChair }
-    
+    if Id = 16 { sprite_index = sArrow }
+    if Id = 17 { sprite_index = sArrow }
 }
 
 if object_index = oArrowDead {

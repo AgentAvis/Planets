@@ -40,7 +40,14 @@ vsp = 0
     Right = keyboard_check(ord('D')) + keyboard_check(vk_left)
     Jump = keyboard_check_pressed(ord('W')) + keyboard_check(vk_up)
     
+if Health < 1 {
 
+//gibs and shit
+instance_destroy() 
+//deathsound
+
+
+}
    
 
 

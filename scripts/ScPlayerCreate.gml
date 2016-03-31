@@ -9,10 +9,13 @@ bib.par = id
 Term = 10
 Gravity = .1
 MoveSpeed = 4
+Health = 5
+
 //init
 image_speed = .25
 vsp = 0
 hsp = 0
+mHealth = Health
 //image_blend = color
 draw = false
 
@@ -36,3 +39,5 @@ if instance_exists(oPlanet) {
 Planet = instance_nearest(x,y,oPlanet)
 
 } else { Planet = noone }
+
+

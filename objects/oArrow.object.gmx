@@ -33,6 +33,10 @@ spin = false
 image_speed = .25
 Timerr = 0
 spot = noone
+
+//init
+Alarm = 0
+dmg = false
 </string>
           </argument>
         </arguments>
@@ -169,9 +173,13 @@ planetihit = Jerry
 var par;
 par = instance_place(x,y,oPlayer)
 
-if instance_exists(par) {
+if dmg { Alarm += 1 if Alarm &gt; 5 { Alarm = 0 dmg = false } }
 
-    if Id != par.Id { with (par) { instance_destroy() } }
+
+if instance_exists(par) and !dmg {
+
+    dmg = true
+    if Id != par.Id { with (par) { Health -= 1 } }
 
     }
 </string>

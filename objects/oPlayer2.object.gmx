@@ -28,7 +28,6 @@
             <string>ScPlayerCreate()
 if room != rCharSelect { Id = global.Player2Id }
 color = c_aqua
-
 </string>
           </argument>
         </arguments>

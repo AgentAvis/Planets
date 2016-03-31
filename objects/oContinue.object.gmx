@@ -39,7 +39,7 @@ draw_set_colour(c_gray);
 draw_set_halign(fa_right);
 draw_text(room_width / 2,room_height-25,"PRESS O TO GO BACK               ")
 
-if !instance_exists(oPlayer1) and !instance_exists(oPlayer2) and !instance_exists(oPlayer3) and !instance_exists(oPlayer4) and room != rCharSelect and room != rMenu {
+if !instance_exists(oPlayer1) and !instance_exists(oPlayer2) and !instance_exists(oPlayer3) and !instance_exists(oPlayer4) and room != rCharSelect and room != rMenu and room != rTemplate{
 
 draw_set_halign(fa_left);
 draw_set_colour( c_red );
@@ -65,6 +65,30 @@ draw_text(room_width / 2, room_height / 2 + 14, " (to allow you to only play wit
 draw_text(room_width / 2, room_height / 2 + 28, " Press R to restart the selection process if you mess up!")
 
 }
+
+if room = rTemplate {
+
+draw_set_halign(fa_center);
+draw_set_colour(c_red);
+draw_text( room_width / 2, room_height / 2," Nothing to see here, go somewhere else. " )
+
+
+}
+/*
+if room = rmOrbitsTwo {
+
+draw_set_halign(fa_center);
+draw_set_alpha(.4);
+draw_set_colour(c_gray);
+draw_text( room_width / 2, room_height / 2," This room falls apart pretty quickly, I suggest you go elsewhere " )
+draw_set_alpha(1);
+
+}
+*/
+
+
+
+draw_set_colour(c_white);
 </string>
           </argument>
         </arguments>

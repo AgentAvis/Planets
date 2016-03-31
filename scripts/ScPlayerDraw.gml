@@ -51,3 +51,10 @@ if mouse_check_button_released(mb_left) {
 with (oAim) { instance_destroy() } 
 
 }
+
+//healthbar
+
+ScHealthBar()
+
+
+

@@ -9,7 +9,7 @@ bib.par = id
 Term = 10
 Gravity = .1
 MoveSpeed = 4
-Health = 5
+Health = global.Health
 
 //init
 image_speed = .25

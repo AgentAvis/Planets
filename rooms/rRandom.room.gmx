@@ -37,8 +37,8 @@ with (instance_create(px,py,oPlanet)) { image_xscale = other.size image_yscale =
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>262</xoffset>
-    <yoffset>161</yoffset>
+    <xoffset>-135</xoffset>
+    <yoffset>-42</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

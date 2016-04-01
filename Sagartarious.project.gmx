@@ -5,9 +5,7 @@
   </Configs>
   <datafiles number="29" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound">
-    <sound>sound\MystOnTheMoor</sound>
-  </sounds>
+  <sounds name="sound"/>
   <sprites name="sprites">
     <sprites name="Projectiles">
       <sprite>sprites\sSeed</sprite>
@@ -67,6 +65,8 @@
     </sprites>
     <sprite>sprites\sMouse</sprite>
     <sprite>sprites\sTitle</sprite>
+    <sprite>sprites\sGreyBox</sprite>
+    <sprite>sprites\sHealthOverRide</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b7</background>
@@ -94,8 +94,10 @@
     <script>scripts\ScDots.gml</script>
     <script>scripts\ScSpawnPlayer.gml</script>
     <script>scripts\ScHealthBar.gml</script>
+    <script>scripts\mouse_over.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\oHealthButton</object>
     <object>objects\oVortex</object>
     <object>objects\oPlayerSpawn</object>
     <object>objects\oPlanet</object>
@@ -147,29 +149,27 @@
     <object>objects\oContinue</object>
     <object>objects\oLineTest</object>
     <object>objects\oGravVisual</object>
+    <object>objects\oGrayBox</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
+    <room>rooms\rRandom</room>
+    <room>rooms\rmDonut</room>
+    <room>rooms\rTriLevel</room>
+    <room>rooms\rmOrbitsOne</room>
+    <room>rooms\rDividedSpaceGame</room>
+    <room>rooms\rSpaceGame</room>
     <room>rooms\rmDoubleDonut</room>
+    <room>rooms\rAsteroidBelt</room>
     <room>rooms\rmInvertedDoubleDonut</room>
     <room>rooms\rmDoubleDonut2</room>
-    <room>rooms\rmOrbitsOne</room>
-    <room>rooms\rmOrbitsTwo</room>
-    <room>rooms\rmDonut</room>
-    <room>rooms\rSpaceGame</room>
     <room>rooms\rTinycent</room>
-    <room>rooms\rTriLevel</room>
-    <room>rooms\rDividedSpaceGame</room>
-    <room>rooms\rOffKilterSpaceGame</room>
-    <room>rooms\rAsteroidBelt</room>
-    <room>rooms\rFeild</room>
     <room>rooms\rShip</room>
-    <room>rooms\rMoons</room>
-    <room>rooms\rRandom</room>
-    <room>rooms\rTest</room>
     <room>rooms\rTemplate</room>
+    <room>rooms\rTest</room>
+    <room>rooms\rmOrbitsTwo</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

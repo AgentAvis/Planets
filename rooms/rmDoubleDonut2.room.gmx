@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>3</xoffset>
-    <yoffset>-23</yoffset>
+    <xoffset>-53</xoffset>
+    <yoffset>54</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -57,10 +57,10 @@
     <instance objName="oPlayer2" x="800" y="384" name="inst_E67E538C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer1" x="128" y="384" name="inst_29B4B75B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlanet" x="448" y="576" name="inst_DD304E6E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="768" y="64" name="inst_E6AFF665" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="320" y="256" name="inst_8E645E9F" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="320" y="512" name="inst_49738A38" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="oPlanet" x="768" y="704" name="inst_5FCEE678" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="704" y="128" name="inst_E6AFF665" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="256" y="192" name="inst_8E645E9F" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="256" y="576" name="inst_49738A38" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="oPlanet" x="704" y="640" name="inst_5FCEE678" locked="0" code="dg = true&#xA;" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer3" x="448" y="64" name="inst_C4E8EB3C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlayer4" x="448" y="704" name="inst_5E6BC4CE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>

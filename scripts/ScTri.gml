@@ -26,4 +26,4 @@
     
     draw_set_alpha(1);
     draw_triangle_colour(tx1,ty1,tx2,ty2,tx3,ty3,c_black,draw_get_colour(),draw_get_colour(),false)
-    draw_circle(tx2,tx3,point_distance(tx2,ty3,tx3,ty3,)/2,false)
+    //draw_circle(tx2,tx3,point_distance(tx2,ty3,tx3,ty3,)/2,false)

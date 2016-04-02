@@ -57,4 +57,34 @@ with (oAim) { instance_destroy() }
 ScHealthBar()
 
 
+if (global.debug) and !flying {
+
+    draw_set_colour(color);
+    draw_set_alpha(1);
+    var footx, footy;
+    footx = x + lengthdir_x( 13, Down + 180 )
+    footy = y + lengthdir_y( 13, Down + 180 )
+    draw_circle(footx,footy,3,false)
+    draw_line(footx,footy,Planet.x,Planet.y)
+    draw_text(x,y,string(point_distance(Planet.x,Planet.y,footx,footy)) + "/" + string(Planet.image_xscale * 64))
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

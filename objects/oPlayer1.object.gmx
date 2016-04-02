@@ -52,23 +52,8 @@ color = c_green
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ScPlayerStuff()
-
-ScSprite()
-
+            <string>ScPlayerStep()
 if room != rCharSelect { if global.Player1Id = false { instance_destroy() }}
-
-if global.focus = id {
-        
-    ScWalk()
-        
-    ScJump()
-    
-    ScShoot() 
-    
-}
-
-ScSpeeds()
 </string>
           </argument>
         </arguments>

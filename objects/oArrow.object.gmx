@@ -63,7 +63,7 @@ Damage = 1
             <kind>1</kind>
             <string>//image_blend = color
 
-if room != rMenu {
+if room != rMenu and room != rCharSelect {
     //trails
     Timerr += 1
     if Timerr &gt; 3  {

@@ -39,6 +39,8 @@ Gimerr = 0
 global.Orbit = 1
 
 global.Health = 4
+
+global.PlanetNumber = 5
 </string>
           </argument>
         </arguments>

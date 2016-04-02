@@ -1,3 +1,11 @@
+//PlanetSinking fix
+    var footx, footy;
+    footx = x + lengthdir_x( 13, Down + 180 )
+    footy = y + lengthdir_y( 13, Down + 180 )
+    if point_distance(Planet.x,Planet.y,footx,footy) < Planet.image_xscale * 64 - 3 {
+        vsp = -.3
+    }
+
 //apply speed
 
     //if i'm not moving stop my hsp (prevents you walking into orbit)

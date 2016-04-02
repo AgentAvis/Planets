@@ -3,7 +3,7 @@
   <spriteName>sPlanet3</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -111,7 +111,7 @@ if (p) {
             y = random_range(100,room_height-100)
         }
             
-    } else { p = false ScSpawnPlayer() }
+    } else { p = false if num &lt;= 4 { ScSpawnPlayer()} }
    
     
 

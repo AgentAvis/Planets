@@ -50,25 +50,8 @@ color = c_aqua
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>ScPlayerStuff()
-
-ScSprite()
-
+            <string>ScPlayerStep()
 if room != rCharSelect { if global.Player2Id = false { instance_destroy() }}
-
-if global.focus = id {
-        
-    ScWalk()
-        
-    ScJump()
-    
-    ScShoot()
-    
-    //ScDots()
-
-}
-
-ScSpeeds()
 </string>
           </argument>
         </arguments>

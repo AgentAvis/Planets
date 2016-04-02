@@ -52,3 +52,17 @@ instance_destroy()
 
 
 
+if global.focus = id {
+        
+    ScWalk()
+        
+    ScJump()
+    
+    ScShoot()
+    
+    ScCheats()
+    
+}
+
+ScSpeeds()
+

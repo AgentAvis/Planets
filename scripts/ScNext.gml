@@ -33,3 +33,5 @@ if object_get_name(id) = oPlayer1 {
         if instance_exists(oPlayer3) { sel = oPlayer3.id } else {
         }}}
     }
+    
+    return sel;

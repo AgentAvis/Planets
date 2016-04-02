@@ -1,3 +1,4 @@
+
 with (oPlanet) {
         
         mass = image_xscale
@@ -15,6 +16,7 @@ with (oPlanet) {
         other.ran = ran
         
         other.pmass = mass
+        //pmass = other.mass
         
         if dis < ran { 
             if dis < ran * 1 { grav = .01 }
@@ -35,3 +37,5 @@ with (oPlanet) {
             }}
         }
     }    }
+    
+

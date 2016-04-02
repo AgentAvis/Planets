@@ -67,6 +67,8 @@
     <sprite>sprites\sTitle</sprite>
     <sprite>sprites\sGreyBox</sprite>
     <sprite>sprites\sHealthOverRide</sprite>
+    <sprite>sprites\sPlanetButton</sprite>
+    <sprite>sprites\sSperm</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b7</background>
@@ -96,9 +98,12 @@
     <script>scripts\ScHealthBar.gml</script>
     <script>scripts\mouse_over.gml</script>
     <script>scripts\ScSpeedCol.gml</script>
+    <script>scripts\ScCheats.gml</script>
+    <script>scripts\ScPlayerStep.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oHealthButton</object>
+    <object>objects\oPlanetNumButton</object>
     <object>objects\oVortex</object>
     <object>objects\oPlayerSpawn</object>
     <object>objects\oPlanet</object>
@@ -156,7 +161,6 @@
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
-    <room>rooms\rTest</room>
     <room>rooms\rRandom</room>
     <room>rooms\rmDonut</room>
     <room>rooms\rTriLevel</room>
@@ -171,6 +175,8 @@
     <room>rooms\rShip</room>
     <room>rooms\rTemplate</room>
     <room>rooms\rmOrbitsTwo</room>
+    <room>rooms\rDuel</room>
+    <room>rooms\rTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

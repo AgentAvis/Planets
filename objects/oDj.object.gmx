@@ -2,7 +2,7 @@
 <object>
   <spriteName>sprite7_shipsall_3</spriteName>
   <solid>0</solid>
-  <visible>0</visible>
+  <visible>-1</visible>
   <depth>110</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -28,6 +28,7 @@
             <string>Dz = 0
 DzDown = false
 global.debug = false
+global.VisGrav = false
 global.focus = noone
 instance_create(x,y,oMouse)
 next = false
@@ -62,9 +63,11 @@ global.Health = 4
             <kind>1</kind>
             <string>if room = rInit { room_goto_next() }
 
-if keyboard_check_pressed(ord('R')) { room_restart() }
-
+if keyboard_check_pressed(ord('R')) { room_restart() } //global.VisGrav = false
+ 
 if keyboard_check_pressed(ord('K')) { global.debug = !global.debug }
+
+if keyboard_check_pressed(ord('G')) { global.VisGrav = !global.VisGrav }
 
 if keyboard_check_pressed(ord('J')) { global.killdots = !global.killdots }
 
@@ -196,7 +199,9 @@ if (global.killdots) { if instance_exists(oDot) { with (oDot) { instance_destroy
           <argument>
             <kind>1</kind>
             <string>if room != rCharSelect {
+        
     
+        
     if instance_exists(global.focus) {
         
         if global.focus.object_index = oPlayer1 {

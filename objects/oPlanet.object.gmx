@@ -192,6 +192,15 @@ if (global.debug) { draw_circle(x,y,64*image_xscale,true) } else {
 }
 */
 
+if (global.debug) {
+
+    draw_set_colour(c_gray);
+    draw_circle(x,y,64*image_xscale,true)
+    draw_point(px,py)
+    draw_set_colour(c_white)
+
+} else {
+    
     draw_set_alpha(1);
     if sprite_index = sPlanet3 {
     C = make_colour_hsv(29,71.2,228.1)
@@ -206,7 +215,8 @@ if (global.debug) { draw_circle(x,y,64*image_xscale,true) } else {
     
     draw_circle_colour(x,y,64*image_xscale ,c_black,c_black,true)
     draw_sprite_ext(sprite_index,0,x,y,image_xscale * .9,image_yscale * .9,0,c_white,1)
-draw_point(px,py)
+
+}
 //draw_set_color(c_white)
 //draw_circle(x,y,750,true)
 //draw_circle(x,y,900,true)

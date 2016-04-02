@@ -95,6 +95,7 @@
     <script>scripts\ScSpawnPlayer.gml</script>
     <script>scripts\ScHealthBar.gml</script>
     <script>scripts\mouse_over.gml</script>
+    <script>scripts\ScSpeedCol.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oHealthButton</object>
@@ -155,6 +156,7 @@
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
+    <room>rooms\rTest</room>
     <room>rooms\rRandom</room>
     <room>rooms\rmDonut</room>
     <room>rooms\rTriLevel</room>
@@ -168,7 +170,6 @@
     <room>rooms\rTinycent</room>
     <room>rooms\rShip</room>
     <room>rooms\rTemplate</room>
-    <room>rooms\rTest</room>
     <room>rooms\rmOrbitsTwo</room>
   </rooms>
   <help>

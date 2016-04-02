@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>with ( oPlanet ) {
     
-    if (global.debug) {
+    if (global.VisGrav) {
     
                 
                 

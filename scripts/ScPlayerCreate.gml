@@ -32,7 +32,7 @@ vy = y
 dr = point_direction(x,y,mouse_x,mouse_y)
 Ppdx = 0
 Ppdy = 0
-
+Id = -1
 
 if instance_exists(oPlanet) {
 

@@ -33,11 +33,11 @@ if mouse_check_button_pressed(mb_any) {
 
 scale = .8
 
-global.Health = get_integer("Select a new default health value; default value is 4; minimum is 1; max is 50", string(global.Health))
+global.Health = get_integer("Select a new default health value; default value is 4; minimum is 0.1; max is 50", string(global.Health))
 
-if global.Health &lt; 1 { global.Health = 1 }
+if global.Health &lt; .1 { global.Health = .1 }
 
-if global.Health &gt; 1 { global.Health = 50 }
+if global.Health &gt; 50 { global.Health = 50 }
 
 }} else { scale = 1 }
 

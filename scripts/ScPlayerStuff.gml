@@ -1,3 +1,5 @@
+/* //shouldn't need this anymore :)
+
 //Nearest planet
 
 if Planet = noone {
@@ -65,4 +67,13 @@ if global.focus = id {
 }
 
 ScSpeeds()
+
+if (global.big) {
+    image_xscale = 1.5
+    image_yscale = 1.5
+} else {
+    image_xscale = 1
+    image_yscale = 1
+}
+
 

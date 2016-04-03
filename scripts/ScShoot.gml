@@ -99,9 +99,9 @@
     charge = (distance_to_point(mouse_x,mouse_y) / 200 )
     
     if charge < 1 {
-        speed = charge * 20 * .5
+        speed = charge * Jspeed * .5
     } else {
-       speed = 20 * .5
+       speed = Jspeed * .5
     }
         speed += Planet.hspeed + Planet.vspeed
     Px = x

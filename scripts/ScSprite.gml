@@ -23,26 +23,7 @@ if object_get_parent(object_index) = oPlayer {
 
 if object_get_parent(object_index) = oPlayer {
     
-    switch(Id) {
-        case 1: sprite_index = sVlad; break;
-        case 2: sprite_index = sPete; break;
-        case 3: sprite_index = sAndre; break;
-        case 4: sprite_index = sZombie; break;
-        case 5: sprite_index = sFish; break;
-        case 6: sprite_index = sVaultBoy; break;
-        case 7: sprite_index = sManny; break;
-        case 8: sprite_index = sPlumber; break;
-        case 9: sprite_index = sBrainBot; break;
-        case 10: sprite_index = sWizzard; break;
-        case 11: sprite_index = sChickenMan; break;
-        case 12: sprite_index = sBeachGuy; break;
-        case 13: sprite_index = sKerbal; break;
-        case 14: sprite_index = sGordon; break;
-        case 15: sprite_index = sMachoman; break;
-        case 16: sprite_index = sCL; break;
-        case 17: sprite_index = sLara; break;
-        //case   1: sprite_index = sVlad; break;
-    }
+    ScStatSwitch()
     
 }
 
@@ -62,7 +43,7 @@ if object_index = oArrow or object_index = oArrowDead {
         case 11: sprite_index = sChicken; break;
         case 12: sprite_index = sBeachBall; break;
         case 13: sprite_index = sFlag; break;
-        case 14: sprite_index = sArrow; break;
+        case 14: sprite_index = sCrowBar; break;
         case 15: sprite_index = sChair; break;
         case 16: sprite_index = sFireBall; break;
         case 17: sprite_index = sArrow; break;
@@ -70,7 +51,28 @@ if object_index = oArrow or object_index = oArrowDead {
         }
 }
 
-
+if object_index = oArrowDead { 
+    switch (Id) {
+        case 1: sprite_index = sSeed ; break;
+        case 2: sprite_index = sWiskey; break;
+        case 3: sprite_index = sPepsi; break;
+        case 4: sprite_index = sBrain; break;
+        case 5: sprite_index = sFishie; break;
+        case 6: instance_create(x,y,oNuke) instance_destroy(); break;
+        case 7: sprite_index = sBooger; break;
+        case 8: sprite_index = sFlower; break;
+        case 9: sprite_index = sCrab; break;
+        case 10: instance_destroy(); break; //little star effect ?
+        case 11: sprite_index = sChicken; break;
+        case 12: sprite_index = sBeachBall; break;
+        case 13: sprite_index = sFlag; break;
+        case 14: sprite_index = sCrowBar; break;
+        case 15: sprite_index = sChair; break;
+        case 16: instance_destroy(); break;
+        case 17: sprite_index = sArrow; break;
+        //default: instance_destroy() ;
+    }
+}
 
 
 

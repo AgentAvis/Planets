@@ -61,26 +61,17 @@ y += planetihit.vspeed
 create += 1
 
 if create &gt; 1 {
-    switch (Id) {
-        case 1: sprite_index = sSeed ; break;
-        case 2: sprite_index = sWiskey; break;
-        case 3: sprite_index = sPepsi; break;
-        case 4: sprite_index = sBrain; break;
-        case 5: sprite_index = sFishie; break;
-        case 6: sprite_index = sMininuke; break;
-        case 7: sprite_index = sBooger; break;
-        case 8: sprite_index = sFlower; break;
-        case 9: sprite_index = sCrab; break;
-        case 10: instance_destroy(); break; //little star effect ?
-        case 11: sprite_index = sChicken; break;
-        case 12: sprite_index = sBeachBall; break;
-        case 13: sprite_index = sFlag; break;
-        case 14: sprite_index = sArrow; break;
-        case 15: sprite_index = sChair; break;
-        case 16: instance_destroy(); break;
-        case 17: sprite_index = sArrow; break;
-        //default: instance_destroy() ;
-        }
+
+    ScSprite()
+    
+}
+
+if (global.big) {
+    image_xscale = 1.5
+    image_yscale = 1.5
+} else {
+    image_xscale = 1
+    image_yscale = 1
 }
 </string>
           </argument>

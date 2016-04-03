@@ -31,6 +31,7 @@
     </sprites>
     <sprites name="People">
       <sprite>sprites\sprite1</sprite>
+      <sprite>sprites\spChar</sprite>
       <sprite>sprites\sVlad</sprite>
       <sprite>sprites\sMaxwell</sprite>
       <sprite>sprites\sAndre</sprite>
@@ -43,14 +44,13 @@
       <sprite>sprites\sWizzard</sprite>
       <sprite>sprites\sZombie</sprite>
       <sprite>sprites\sGordon</sprite>
-      <sprite>sprites\spChar</sprite>
       <sprite>sprites\sKerbal</sprite>
       <sprite>sprites\sPete</sprite>
       <sprite>sprites\sBeachGuy</sprite>
       <sprite>sprites\sMachoman</sprite>
+      <sprite>sprites\sCL</sprite>
+      <sprite>sprites\sLara</sprite>
     </sprites>
-    <sprite>sprites\sCL</sprite>
-    <sprite>sprites\sLara</sprite>
     <sprites name="Environment">
       <sprite>sprites\sPlanet</sprite>
       <sprite>sprites\sprite13</sprite>
@@ -72,6 +72,7 @@
     <sprite>sprites\sJumpingButton</sprite>
     <sprite>sprites\sSperm</sprite>
     <sprite>sprites\sFireBall</sprite>
+    <sprite>sprites\sCrowBar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b7</background>
@@ -104,6 +105,7 @@
     <script>scripts\ScCheats.gml</script>
     <script>scripts\ScPlayerStep.gml</script>
     <script>scripts\ScButton.gml</script>
+    <script>scripts\ScStatSwitch.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oButton</object>
@@ -168,6 +170,7 @@
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
+    <room>rooms\rTest</room>
     <room>rooms\rRandom</room>
     <room>rooms\rmDonut</room>
     <room>rooms\rTriLevel</room>
@@ -183,7 +186,6 @@
     <room>rooms\rTemplate</room>
     <room>rooms\rmOrbitsTwo</room>
     <room>rooms\rDuel</room>
-    <room>rooms\rTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

@@ -43,6 +43,8 @@ global.Health = 4
 global.PlanetNumber = 5
 
 global.Jumping = true
+
+global.big = false
 </string>
           </argument>
         </arguments>
@@ -76,6 +78,8 @@ if keyboard_check_pressed(ord('G')) { global.VisGrav = !global.VisGrav }
 if keyboard_check_pressed(ord('J')) { global.killdots = !global.killdots }
 
 if keyboard_check_pressed(ord('L')) { global.Jumping = !global.Jumping }
+
+if keyboard_check_pressed(ord('B')) { global.big = !global.big }
 
 if keyboard_check_pressed(ord('P')) { if room_exists(room_next(room)) room_goto_next();  }
 

@@ -12,6 +12,7 @@ MoveSpeed = 4
 Health = global.Health
 mass = 7.5
 depth = -11
+scale = 1
 
 
 //init
@@ -43,7 +44,5 @@ if instance_exists(oPlanet) {
 Planet = instance_nearest(x,y,oPlanet)
 
 } else { Planet = noone }
-
-
 
 

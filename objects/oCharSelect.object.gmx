@@ -87,6 +87,12 @@ if Sets = 3 and Done = false{
 
 }
 
+with (opChar) {
+
+ScStatSwitch()
+
+}
+
 </string>
           </argument>
         </arguments>

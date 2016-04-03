@@ -115,7 +115,7 @@ Diz = distance_to_object(hsp + vsp)
 //y += lengthdir_y(Diz,DizDir)
 
 planetihit = Jerry
-
+    /*
     if sprite_index = sSeed {
         speed = 0 instance_change(oRoot,true)
         changed = true
@@ -167,6 +167,30 @@ planetihit = Jerry
         speed = 0
         changed = true
     }
+    
+    switch (sprite_index) {
+    
+    case sSeed:
+    speed = 0
+    instance_change(oRoot,true)
+    changed = true;
+    break;
+    case sPepsi:
+    speed = 0
+    instance_change(oRoot,true)
+    changed = true;
+    break;
+    
+    
+    
+    
+    
+    
+    
+    
+    }
+    */
+    
     if changed = false { instance_change(oArrowDead,true) }
 
 } else {

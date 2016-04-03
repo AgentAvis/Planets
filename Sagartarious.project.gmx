@@ -67,8 +67,11 @@
     <sprite>sprites\sTitle</sprite>
     <sprite>sprites\sGreyBox</sprite>
     <sprite>sprites\sHealthOverRide</sprite>
+    <sprite>sprites\sPlanetNumButton</sprite>
     <sprite>sprites\sPlanetButton</sprite>
+    <sprite>sprites\sJumpingButton</sprite>
     <sprite>sprites\sSperm</sprite>
+    <sprite>sprites\sFireBall</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b7</background>
@@ -100,10 +103,14 @@
     <script>scripts\ScSpeedCol.gml</script>
     <script>scripts\ScCheats.gml</script>
     <script>scripts\ScPlayerStep.gml</script>
+    <script>scripts\ScButton.gml</script>
   </scripts>
   <objects name="objects">
+    <object>objects\oButton</object>
     <object>objects\oHealthButton</object>
     <object>objects\oPlanetNumButton</object>
+    <object>objects\oJumpButton</object>
+    <object>objects\oGravButton</object>
     <object>objects\oVortex</object>
     <object>objects\oPlayerSpawn</object>
     <object>objects\oPlanet</object>

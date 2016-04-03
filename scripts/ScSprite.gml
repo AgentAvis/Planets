@@ -46,132 +46,6 @@ if object_get_parent(object_index) = oPlayer {
     
 }
 
-
-/*
-if object_index = oArrow {
-
-    if Id = 1 { 
-    
-        sprite_index = sSeed 
-    
-        Damage = 1
-    
-    }
-    if Id = 2 { 
-    
-        sprite_index = sWiskey
-    
-        Damage = 1
-    
-    }
-    if Id = 3 { 
-    
-        sprite_index = sPepsi
-    
-        Damage = 1
-    
-    }
-    if Id = 4 { 
-    
-        sprite_index = sBrain
-    
-        Damage = 1
-    
-    }
-    if Id = 5 { 
-    
-        sprite_index = sFishie
-    
-        Damage = 1
-    
-    }
-    if Id = 6 { 
-    
-        sprite_index = sMininuke
-    
-        Damage = 1
-    
-    }
-    if Id = 7 {
-    
-        sprite_index = sBooger
-    
-        Damage = 1
-    
-    }
-    if Id = 8 {
-    
-        sprite_index = sFlower
-    
-        Damage = 1
-    
-    }
-    if Id = 9 {
-    
-        sprite_index = sCrab
-    
-        Damage = 1
-    
-    }
-    if Id = 10 {
-        
-        sprite_index = sStar
-    
-        Damage = 1
-    
-    }
-    if Id = 11 {
-    
-        sprite_index = sChicken
-    
-        Damage = 1
-    
-    }
-    if Id = 12 {
-    
-        sprite_index = sBeachBall
-    
-        Damage = 1
-    
-    }
-    if Id = 13 {
-    
-        sprite_index = sFlag
-    
-        Damage = 1
-    
-    }
-    if Id = 14 {
-    
-        sprite_index = sMachoman
-    
-        Damage = 1
-    
-    }
-    if Id = 15 {
-    
-        sprite_index = sChair
-    
-        Damage = 1
-    
-    }
-    if Id = 16 {
-    
-        sprite_index = sArrow
-    
-        Damage = 1
-    
-    }
-    if Id = 17 {
-    
-        sprite_index = sArrow
-    
-        Damage = 1
-    
-    }
-}
-
-*/
 if object_index = oArrow or object_index = oArrowDead { 
     switch (Id) {
     
@@ -190,9 +64,9 @@ if object_index = oArrow or object_index = oArrowDead {
         case 13: sprite_index = sFlag; break;
         case 14: sprite_index = sArrow; break;
         case 15: sprite_index = sChair; break;
-        case 16: sprite_index = sArrow; break;
+        case 16: sprite_index = sFireBall; break;
         case 17: sprite_index = sArrow; break;
-    
+        //default: instance_destroy() ;
         }
 }
 

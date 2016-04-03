@@ -10,7 +10,7 @@ Term = 10
 Gravity = .1
 MoveSpeed = 4
 Health = global.Health
-mass = 10
+mass = 7.5
 depth = -11
 
 

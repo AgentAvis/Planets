@@ -3,16 +3,23 @@
 
     //arrows yo
     
-    
+    if global.Jumping {
     if mouse_check_button_pressed(mb_left) or mouse_check_button_pressed(mb_right) { 
     
     draw = true
      
        }
+    } else {
+    if mouse_check_button_pressed(mb_left) { 
     
+    draw = true
+     
+    }
+    }
     ScDots()     
        
     if mouse_check_button_released(mb_left) and draw = true  {
+    
     
     draw = false
     Arrow = instance_create(x,y,oArrow)
@@ -81,7 +88,7 @@
     
     }
    
-    if mouse_check_button_released(mb_right) and draw {
+    if mouse_check_button_released(mb_right) and draw and global.Jumping {
     
     flying = true
     draw = false

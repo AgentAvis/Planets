@@ -53,7 +53,7 @@ if object_index = oArrow or object_index = oArrowDead {
 
 if object_index = oArrowDead { 
     switch (Id) {
-        case 1: sprite_index = sSeed ; break;
+        case 1: speed = 0 instance_change(oRoot,true) ; break;
         case 2: sprite_index = sWiskey; break;
         case 3: sprite_index = sPepsi; break;
         case 4: sprite_index = sBrain; break;

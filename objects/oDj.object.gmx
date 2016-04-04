@@ -45,6 +45,8 @@ global.PlanetNumber = 5
 global.Jumping = true
 
 global.big = false
+
+global.gore = true
 </string>
           </argument>
         </arguments>
@@ -78,6 +80,8 @@ if keyboard_check_pressed(ord('G')) { global.VisGrav = !global.VisGrav }
 if keyboard_check_pressed(ord('J')) { global.killdots = !global.killdots }
 
 if keyboard_check_pressed(ord('L')) { global.Jumping = !global.Jumping }
+
+if keyboard_check_pressed(ord('M')) { global.gore = !global.gore }
 
 if keyboard_check_pressed(ord('B')) { global.big = !global.big }
 

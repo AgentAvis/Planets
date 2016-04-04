@@ -72,6 +72,7 @@
     <sprite>sprites\sJumpingButton</sprite>
     <sprite>sprites\sSperm</sprite>
     <sprite>sprites\sFireBall</sprite>
+    <sprite>sprites\sBlood</sprite>
     <sprite>sprites\sCrowBar</sprite>
   </sprites>
   <backgrounds name="background">
@@ -165,6 +166,7 @@
     <object>objects\oLineTest</object>
     <object>objects\oGravVisual</object>
     <object>objects\oGrayBox</object>
+    <object>objects\oBlood</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>

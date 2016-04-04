@@ -115,11 +115,13 @@ Diz = distance_to_object(hsp + vsp)
 //y += lengthdir_y(Diz,DizDir)
 
 planetihit = Jerry
+
     /*
     if sprite_index = sSeed {
         speed = 0 instance_change(oRoot,true)
         changed = true
     }
+    
     
     if sprite_index = sPepsi {
         instance_change(oArrowDead,true) 
@@ -237,8 +239,16 @@ if instance_exists(HitPlayer) and !Hit {
             
         with(HitPlayer) { Health -= other.Damage }
         
-    } 
+   
     
+    if global.gore {
+        repeat (ceil(speed)) {
+        with (instance_create(HitPlayer.x,HitPlayer.y,oBlood)) { speed = other.speed + random_range(-other.speed + 1,0) direction = other.direction + random_range(-10,10) }
+    }
+    
+     } 
+    
+    }
     
     
 }

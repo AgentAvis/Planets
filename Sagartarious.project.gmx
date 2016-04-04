@@ -67,6 +67,7 @@
     <sprite>sprites\sTitle</sprite>
     <sprite>sprites\sGreyBox</sprite>
     <sprite>sprites\sHealthOverRide</sprite>
+    <sprite>sprites\sKnockBackMultiplier</sprite>
     <sprite>sprites\sPlanetNumButton</sprite>
     <sprite>sprites\sPlanetButton</sprite>
     <sprite>sprites\sJumpingButton</sprite>
@@ -111,6 +112,7 @@
   <objects name="objects">
     <object>objects\oButton</object>
     <object>objects\oHealthButton</object>
+    <object>objects\oKnockbackButton</object>
     <object>objects\oPlanetNumButton</object>
     <object>objects\oJumpButton</object>
     <object>objects\oGravButton</object>

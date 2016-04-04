@@ -244,6 +244,7 @@ if instance_exists(HitPlayer) and !Hit {
     if global.gore {
         repeat (ceil(speed)) {
         with (instance_create(HitPlayer.x,HitPlayer.y,oBlood)) { speed = other.speed + random_range(-other.speed + 1,0) direction = other.direction + random_range(-10,10) }
+        with (HitPlayer) { flying = true speed = other.speed * global.knockback direction = other.direction }
     }
     
      } 

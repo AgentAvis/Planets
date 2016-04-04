@@ -78,7 +78,7 @@
     <instance objName="oChar16" x="704" y="256" name="inst_ED2C060C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oChar17" x="768" y="256" name="inst_E6D9DB96" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oGrayBox" x="-320" y="0" name="inst_1745214E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oHealthButton" x="992" y="32" name="inst_92686FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oHealthButton" x="992" y="35" name="inst_92686FAF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oJumpButton" x="924" y="32" name="inst_65861E78" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlanet" x="128" y="704" name="inst_E691029C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlanet" x="128" y="768" name="inst_6B416CB0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -109,6 +109,7 @@
     <instance objName="oPlanet" x="64" y="896" name="inst_A315F6A1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlanet" x="0" y="896" name="inst_EEA59F1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oPlanet" x="1024" y="896" name="inst_84B9A2A9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oKnockbackButton" x="860" y="35" name="inst_FEBCAEC4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

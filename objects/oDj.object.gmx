@@ -47,6 +47,8 @@ global.Jumping = true
 global.big = false
 
 global.gore = true
+
+global.knockback = .75
 </string>
           </argument>
         </arguments>

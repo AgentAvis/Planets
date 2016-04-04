@@ -121,7 +121,6 @@
     <object>objects\oPlanet</object>
     <object>objects\oDj</object>
     <object>objects\oMouse</object>
-    <object>objects\oShip1</object>
     <object>objects\oPlayer</object>
     <object>objects\oPlayer1</object>
     <object>objects\oPlayer2</object>

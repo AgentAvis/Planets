@@ -7,7 +7,7 @@ col1 = color
 var col2;
 col2 = c_black
 
-if distance_to_point(mouse_x,mouse_y) > 200 {
+if (distance_to_point(mouse_x,mouse_y) > 200) {
 //lengthdir mumbo jumbo
 
 var ptdir;
@@ -36,7 +36,7 @@ draw_line_width_colour(x,y,mouse_x,mouse_y,4,col1,col2)
 
 if global.focus = id {
     
-    if Px != 0 and Py != 0 {
+    if (Px != 0) and (Py != 0) {
     //last shot line
         if !global.killdots {
             draw_line_width_colour( Px,Py,Ppdx,Ppdy,2,c_black,color )
@@ -57,7 +57,7 @@ with (oAim) { instance_destroy() }
 ScHealthBar()
 
 
-if (global.debug) and !flying {
+if (global.debug) and (!flying) {
 
     draw_set_colour(color);
     draw_set_alpha(1);

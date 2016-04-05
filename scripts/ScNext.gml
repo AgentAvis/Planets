@@ -1,37 +1,29 @@
-if object_get_name(id) = oPlayer1 {
-        if instance_exists(oPlayer2) { sel = oPlayer2.id } else {
-        
-        if instance_exists(oPlayer3) { sel = oPlayer3.id } else {
-        
-        if instance_exists(oPlayer4) { sel = oPlayer4.id } else {
+switch ( object_index ) {    
+    case oPlayer1:
+        if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {   
+        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {    
+        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
         }}}
-    }
+    ; break ;
     
-    if object_get_name(id) = oPlayer2 {
-        if instance_exists(oPlayer3) { sel = oPlayer3.id } else {
-        
-        if instance_exists(oPlayer4) { sel = oPlayer4.id } else {
-        
-        if instance_exists(oPlayer1) { sel = oPlayer1.id } else {
+    case oPlayer2:
+        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
+        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
+        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
         }}}
-    }
+    ; break ;
     
-    if object_get_name(id) = oPlayer3 {
-        if instance_exists(oPlayer4) { sel = oPlayer4.id } else {
-        
-        if instance_exists(oPlayer1) { sel = oPlayer1.id } else {
-        
-        if instance_exists(oPlayer2) { sel = oPlayer.id } else {
+    case oPlayer3:
+        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
+        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
+        if instance_exists(oPlayer2) { global.focus = oPlayer.id } else {
         }}}
-    }
+    ; break ;
     
-    if object_get_name(id) = oPlayer4 {
-        if instance_exists(oPlayer1) { sel = oPlayer1.id } else {
-        
-        if instance_exists(oPlayer2) { sel = oPlayer2.id } else {
-        
-        if instance_exists(oPlayer3) { sel = oPlayer3.id } else {
+    case oPlayer4:
+        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
+        if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
+        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
         }}}
-    }
-    
-    return sel;
+    ; break ;
+}

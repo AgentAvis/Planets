@@ -1,3 +1,5 @@
+if flying { Down = 90 }
+
 var dist, dire ;
 dist = 5
 dire = Down //+ 180

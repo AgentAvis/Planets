@@ -88,28 +88,26 @@ if !flying {
 
 } else {
 
-//arrow code ?
+    //I'm flying woo~
 
-if room = rCharSelect { flying = false }
+    if room = rCharSelect { flying = false }
 
-var Planny;
-Planny = instance_place(x+hspeed,y+vspeed,oPlanet)
-
-if instance_exists(Planny) {
-
-speed = 0
-Planet = Planny
-flying = false
-
-
-} else { ScGravity() image_angle = direction }
-
-
-
-
-
-
-
+    var Planny;
+    Planny = instance_place(x+hspeed,y+vspeed,oPlanet)
+    
+    if global.focus = id {   
+        flytime += 1
+    }
+    
+    if instance_exists(Planny) {
+        flytime = 0
+        speed = 0
+        Planet = Planny
+        flying = false
+    } else { ScGravity() image_angle = direction }
+    if global.focus = id {
+        if flytime > room_speed * 5 { ScNext() }
+    }
 }
 
 

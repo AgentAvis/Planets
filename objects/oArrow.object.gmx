@@ -142,7 +142,7 @@ planetihit = Jerry
         instance_destroy()
         instance_create(x,y,oNuke)
         changed = true
-    }
+    } //get_integer_asyn
     if sprite_index = sFlower {
         instance_change(oArrowDead,true)
         sprite_index = sFlower
@@ -242,8 +242,13 @@ if instance_exists(HitPlayer) and !Hit {
    
     
     if global.gore {
-        repeat (ceil(speed)) {
-        with (instance_create(HitPlayer.x,HitPlayer.y,oBlood)) { speed = other.speed + random_range(-other.speed + 1,0) direction = other.direction + random_range(-10,10) }
+        var HitPlayery, HitPlayerx;
+        HitPlayery = HitPlayer.y
+        HitPlayerx = HitPlayer.x
+        bloodnum = ceil(speed * 2)
+        if bloodnum &gt; 100 { bloodnum = 100 }
+        repeat (bloodnum) {
+        with (instance_create(HitPlayerx,HitPlayery,oBlood)) { speed = other.speed + random_range(-other.speed + 1,.1) direction = other.direction + random_range(-20,20) }
         with (HitPlayer) { flying = true speed = other.speed * global.knockback direction = other.direction }
     }
     

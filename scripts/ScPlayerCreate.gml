@@ -20,6 +20,7 @@ image_speed = .25
 vsp = 0
 hsp = 0
 mHealth = Health
+flytime = 0
 //image_blend = color
 draw = false
 

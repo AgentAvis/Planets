@@ -44,7 +44,7 @@ global.PlanetNumber = 5
 
 global.Jumping = true
 
-global.big = false
+global.big = true
 
 global.gore = true
 

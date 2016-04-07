@@ -1,7 +1,7 @@
 //PlanetSinking fix
     var footx, footy;
-    footx = x + lengthdir_x( 13 * image_xscale, Down + 180 )
-    footy = y + lengthdir_y( 13 * image_yscale, Down + 180 )
+    footx = x + lengthdir_x( 10 * image_xscale, Down + 180 )
+    footy = y + lengthdir_y( 10 * image_yscale, Down + 180 )
     if point_distance(Planet.x,Planet.y,footx,footy) < Planet.image_xscale * 64 - 3 {
         vsp = -.3
     }

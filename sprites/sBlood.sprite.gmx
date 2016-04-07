@@ -21,7 +21,5 @@
   <height>10</height>
   <frames>
     <frame index="0">images\sBlood_0.png</frame>
-    <frame index="1">images\sBlood_1.png</frame>
-    <frame index="2">images\sBlood_2.png</frame>
   </frames>
 </sprite>

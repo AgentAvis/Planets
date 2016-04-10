@@ -85,21 +85,23 @@ if instance_exists(dumb) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>d += 1
+            <string>s = sin(sin(cos(sin(sin(d / 20) * 2) * 2) * 2) * 2)
+
+d += 1
 if d &gt; 359 { d = 0 }
-draw_sprite_ext(sVortex,d,x,y,1,1,0,c_white,.25)
+draw_sprite_ext(sVortex,d,x,y,s,s,0,c_white,.25)
 
 a += .5
 if a &gt; 359 { a = 0 }
-draw_sprite_ext(sVortex,floor(a),x,y,1,1,0,c_white,.25)
+draw_sprite_ext(sVortex,floor(a),x,y,s,s,0,c_white,.25)
 
 b -= 1
 if b &lt; 1 { b = 259 }
-draw_sprite_ext(sVortex,b,x,y,1,1,0,c_white,.25)
+draw_sprite_ext(sVortex,b,x,y,s,s,0,c_white,.25)
 
 c -= .25
 if c &lt; 1 { c = 259 }
-draw_sprite_ext(sVortex,floor(c),x,y,1,1,0,c_white,.25)
+draw_sprite_ext(sVortex,floor(c),x,y,s,s,0,c_white,.25)
 </string>
           </argument>
         </arguments>

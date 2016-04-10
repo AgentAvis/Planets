@@ -89,7 +89,7 @@ if mouse_over() {
 if drawstats {
 
 bx = 125
-by = 210
+by = 160
 
 draw_sprite_ext(sprite_index,0,bx,by - 80,6,6,image_angle,c_white,1)
 
@@ -102,7 +102,8 @@ draw_text(bx - 30,by + 14,"Mass:     " + string(mass))
 draw_text(bx - 30,by + 28,"Health:  " + string(dHealth))
 draw_text(bx - 30,by + 42,"Size:     " + string(scale))
 draw_text(bx - 30,by + 56,"JSpeed: " + string(Jspeed))
-
+draw_set_halign(fa_left);
+draw_text(10,by + 70,Desk)
 
 
 

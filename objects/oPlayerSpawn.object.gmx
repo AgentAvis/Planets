@@ -92,7 +92,9 @@ instance_destroy()
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>d += 1 * 2
+            <string>
+
+d += 1 * 2
 if d &gt; 359 { d = 0 }
 draw_sprite_ext(sVortex,d,x,y,scale,scale,0,c_white,.15)
 

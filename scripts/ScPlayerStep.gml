@@ -93,7 +93,8 @@ if !flying {
     if room = rCharSelect { flying = false }
 
     var Planny;
-    Planny = instance_place(x+hspeed,y+vspeed,oPlanet)
+    Planny = instance_place(x+hspeed/2,y+vspeed/2,oPlanet)
+    //Planny = ScSpeedCol( oPlanet )
     
     if global.focus = id {   
         flytime += 1

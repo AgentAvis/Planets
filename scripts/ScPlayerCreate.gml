@@ -23,6 +23,8 @@ mHealth = Health
 flytime = 0
 //image_blend = color
 draw = false
+bleedamt = 0
+bloodamt = 1
 
 //stuff i wanna define per player after creation
 //color = c_white

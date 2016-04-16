@@ -203,13 +203,13 @@ if (global.debug) {
     
     draw_set_alpha(1);
     if sprite_index = sPlanet3 {
-    C = make_colour_hsv(29,71.2,228.1)
+    C = make_colour_rgb(238,195,154)
     }
     if sprite_index = sPlanet2 {
-    C = make_colour_hsv(91,130,100)
+    C = make_colour_rgb(75,105,47)
     }
     if sprite_index = sPlanet1 {
-    C = make_colour_hsv(34,4.1,80)
+    C = make_colour_rgb(89,86,82)
     }
     draw_circle_colour(x,y,64*image_xscale,C,C,false)
     

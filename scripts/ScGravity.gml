@@ -18,6 +18,7 @@ with (oPlanet) {
         other.pmass = mass
         //pmass = other.mass
         
+        
         if dis < ran { 
             if dis < ran * 1 { grav = .01 }
             if dis < ran *.9 { grav = .02 }
@@ -36,6 +37,12 @@ with (oPlanet) {
                 motion_add(point_direction(x,y,other.x,other.y,),force)
             }}
         }
+
+        
+        
+        
+        
+        
     }    }
     
 

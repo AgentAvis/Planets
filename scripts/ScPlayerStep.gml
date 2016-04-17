@@ -3,6 +3,7 @@ ScSprite()
 if mHealth != dHealth { Health = dHealth mHealth = dHealth }
 blood = (Health / mHealth)
 if bloodamt > blood and random(3) > 1 { with (instance_create(x,y,oBlood)) { direction = random(360) speed = random(10) } bloodamt -= .005 }
+image_blend = make_colour_hsv(0,255-blood*255,255)
 //if bleedamt != 0 { repeat (ceil(bleedamt)) { with (instance_create(x,y,oBlood)) { direction = random(360) speed = random(10) } } }
 
 

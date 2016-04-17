@@ -169,11 +169,14 @@
     <object>objects\oGravVisual</object>
     <object>objects\oGrayBox</object>
     <object>objects\oBlood</object>
+    <object>objects\oBloodSplat</object>
+    <object>objects\oArtist</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rInit</room>
     <room>rooms\rMenu</room>
     <room>rooms\rCharSelect</room>
+    <room>rooms\rTest</room>
     <room>rooms\rRandom</room>
     <room>rooms\rmDonut</room>
     <room>rooms\rTriLevel</room>
@@ -189,7 +192,6 @@
     <room>rooms\rTemplate</room>
     <room>rooms\rmOrbitsTwo</room>
     <room>rooms\rDuel</room>
-    <room>rooms\rTest</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

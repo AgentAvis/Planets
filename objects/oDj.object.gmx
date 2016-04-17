@@ -73,7 +73,7 @@ global.knockback = .75
             <kind>1</kind>
             <string>if room = rInit { room_goto_next() }
 
-if keyboard_check_pressed(ord('R')) { room_restart() } //global.VisGrav = false
+if keyboard_check_pressed(ord('R')) { room_restart() with (oArtist) { surf = surface_create(room_width,room_height) } } //global.VisGrav = false
  
 if keyboard_check_pressed(ord('K')) { global.debug = !global.debug }
 

@@ -14,6 +14,7 @@ plant man he is today.
         dHealth = global.Health
         scale = 1
         Jspeed = 20
+        agil = 5
         //in step: if maxhealth != dHealth { Health = dHealth maxhealth = dHealth }
         ; break;
         case 2: sprite_index = sPete
@@ -28,6 +29,7 @@ terrible at cardio.
         dHealth = global.Health + ( global.Health / 5 )
         scale = 1.25
         Jspeed = 15
+        agil = 5
         ; break;
         case 3: sprite_index = sAndre
         name = "Andre"
@@ -39,6 +41,7 @@ Andre really does not want to be here.
         dHealth = global.Health
         scale = 1
         Jspeed = 18
+        agil = 7
         ; break;
         case 4: sprite_index = sZombie
         name = "Maxwell"
@@ -53,6 +56,7 @@ Other zombies really like him, though.
         dHealth = global.Health - ( global.Health / 5 )
         scale = 1
         Jspeed = 15
+        agil = 4
         ; break;
         case 5: sprite_index = sFish
         name = "Gills"
@@ -65,6 +69,7 @@ of Vlad.
         dHealth = global.Health 
         scale = 1
         Jspeed = 20
+        agil = 10
         ; break;
         case 6: sprite_index = sVaultBoy
         name = "Mysterious Survivor"
@@ -78,6 +83,7 @@ ton of mini nukes.
         dHealth = global.Health
         scale = 1
         Jspeed = 15
+        agil = 7
         ; break;
         case 7: sprite_index = sManny
         name = "Manny"
@@ -89,6 +95,7 @@ A giant walking red booger.
         dHealth = global.Health
         scale = 1
         Jspeed = 20
+        agil = 7.5
         ; break;
         case 8: sprite_index = sPlumber
         name = "Antonio"
@@ -105,6 +112,7 @@ looks Italian.
         dHealth = global.Health - ( global.Health / 3 ) 
         scale = 1
         Jspeed = 30
+        agil = 5
         ; break;
         case 9: sprite_index = sBrainBot
         name = "Cortana"
@@ -119,6 +127,7 @@ of crabs.
         dHealth = global.Health 
         scale = 1
         Jspeed = 15
+        agil = 4
         ; break;
         case 10: sprite_index = sWizzard
         name = "Gandorf"
@@ -134,6 +143,7 @@ a powerful wizard.
         dHealth = global.Health
         scale = 1
         Jspeed = 25
+        agil = 12
         ; break;
         case 11: sprite_index = sChickenMan
         name = " Falcon "
@@ -149,6 +159,7 @@ monsters.
         dHealth = global.Health - ( global.Health / 5 )
         scale = 1
         Jspeed = 20
+        agil = 17
         ; break;
         case 12: sprite_index = sBeachGuy
         name = "Ron"
@@ -160,6 +171,7 @@ monsters.
         dHealth = global.Health
         scale = 1.15
         Jspeed = 20
+        agil = 5
         ; break;
         case 13: sprite_index = sKerbal
         name = "Jebediah" 
@@ -176,6 +188,7 @@ he calls: the 'space Kraken'
         dHealth = global.Health + ( global.Health / 5 )
         scale = 1
         Jspeed = 23.12
+        agil = 10
         ; break;
         case 14: sprite_index = sGordon
         name = "Gordon"
@@ -190,6 +203,7 @@ horrifying alien creatures.
         dHealth = global.Health
         scale = 1
         Jspeed = 20
+        agil = 5
         ; break;
         case 15: sprite_index = sMachoman
         name = "The Mutt"
@@ -206,6 +220,7 @@ wrestler.
         dHealth = global.Health + ( global.Health / 5 )
         scale = 1
         Jspeed = 20
+        agil = 5
         ; break;
         case 16: sprite_index = sCL
         name = "Chen"
@@ -219,6 +234,7 @@ how to kill.
         dHealth = global.Health - ( global.Health / 5 )
         scale = 1
         Jspeed = 30
+        agil = 5
         ; break;
         case 17: sprite_index = sLara
         name = "Lora"
@@ -232,6 +248,7 @@ how to kill.
         dHealth = global.Health
         scale = 1
         Jspeed = 20
+        agil = 5
         ; break;
         
         default: sprite_index = spChar
@@ -241,5 +258,6 @@ how to kill.
         dHealth = global.Health
         scale = 1
         Jspeed = 20;
+        agil = 5
         //case   1: sprite_index = sVlad; break;
     }

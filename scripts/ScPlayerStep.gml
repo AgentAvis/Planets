@@ -6,7 +6,8 @@ if bloodamt > blood and random(3) > 1 { with (instance_create(x,y,oBlood)) { dir
 image_blend = make_colour_hsv(0,255-blood*255,255)
 //if bleedamt != 0 { repeat (ceil(bleedamt)) { with (instance_create(x,y,oBlood)) { direction = random(360) speed = random(10) } } }
 
-
+Left = keyboard_check(ord('A')) + keyboard_check(vk_right)
+Right = keyboard_check(ord('D')) + keyboard_check(vk_left)
 
 
 if !flying {
@@ -49,8 +50,8 @@ if !flying {
         //if i'm not playing i can't move ???
         
         //define movement keys yo
-            Left = keyboard_check(ord('A')) + keyboard_check(vk_right)
-            Right = keyboard_check(ord('D')) + keyboard_check(vk_left)
+            //Left = keyboard_check(ord('A')) + keyboard_check(vk_right)
+            //Right = keyboard_check(ord('D')) + keyboard_check(vk_left)
             Jump = keyboard_check_pressed(ord('W')) + keyboard_check(vk_up)
             
         if Health <= 0 {
@@ -66,6 +67,8 @@ if !flying {
         
         
         if global.focus = id {
+                    
+                if jumped { ScNext() jumped = false } 
                 
                 //ScWalk()
                 if (Left) { hsp = MoveSpeed }
@@ -96,7 +99,14 @@ if !flying {
 } else {
 
     //I'm flying woo~
-
+    
+    //steering
+    if global.focus = id {
+        if global.Flying = true {
+            if Left { direction += agil }
+            if Right { direction -= agil }    
+        }
+    }
     if room = rCharSelect { flying = false }
 
     var Planny;
@@ -104,7 +114,7 @@ if !flying {
     //Planny = ScSpeedCol( oPlanet )
     
     if global.focus = id {   
-        flytime += 1
+        //flytime += 1
     }
     
     if instance_exists(Planny) {

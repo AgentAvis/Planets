@@ -41,6 +41,7 @@ Ppdx = 0
 Ppdy = 0
 Id = -1
 flying = false
+jumped = false
 
 if instance_exists(oPlanet) {
 

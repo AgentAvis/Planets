@@ -49,43 +49,7 @@
     Ppdy = y + lengthdir_y(d,dr)
     
     ScNext()
-    /*
-    if object_index = oPlayer1 {
-        if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
-        
-        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
-        
-        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
-        }}}
-    }
     
-    if object_index = oPlayer2 {
-        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
-        
-        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
-        
-        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
-        }}}
-    }
-    
-    if object_index = oPlayer3 {
-        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
-        
-        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
-        
-        if instance_exists(oPlayer2) { global.focus = oPlayer.id } else {
-        }}}
-    }
-    
-    if object_index = oPlayer4 {
-        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
-        
-        if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
-        
-        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
-        }}}
-    }
-    */
     }
    
     if mouse_check_button_released(mb_right) and draw and global.Jumping {
@@ -115,7 +79,7 @@
     
     //global.focus = ScNext()
     
-    ScNext()
+    jumped = true//ScNext()
     
     /*
     if object_index = oPlayer1 {

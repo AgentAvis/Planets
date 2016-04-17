@@ -102,8 +102,9 @@ draw_text(bx - 30,by + 14,"Mass:     " + string(mass))
 draw_text(bx - 30,by + 28,"Health:  " + string(dHealth))
 draw_text(bx - 30,by + 42,"Size:     " + string(scale))
 draw_text(bx - 30,by + 56,"JSpeed: " + string(Jspeed))
+draw_text(bx - 30,by + 70,"Agility:  " + string(agil))
 draw_set_halign(fa_left);
-draw_text(10,by + 70,Desk)
+draw_text(10,by + 84,Desk)
 
 
 

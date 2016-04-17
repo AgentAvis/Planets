@@ -28,7 +28,7 @@
             <string>image_angle = random(360)
 image_speed = 0
 image_index = random(floor(image_number))
-diz = 7
+diz = 10
 </string>
           </argument>
         </arguments>
@@ -91,8 +91,8 @@ speed = speed * .75
 if random(5) &gt; 1 {
     var dire;
     dire = point_direction(x,y,PlanetCol.x,PlanetCol.y)
-    x += lengthdir_x(diz,dire)
-    y += lengthdir_y(diz,dire)
+    x += lengthdir_x(diz - 3,dire)
+    y += lengthdir_y(diz - 3,dire)
     speed = 0
     f = can
     instance_change(oBloodSplat,true)

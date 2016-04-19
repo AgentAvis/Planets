@@ -30,7 +30,7 @@ with (instance_create(px,py,oPlanet)) { num = other.num image_xscale = other.siz
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1008</w>
+    <w>1016</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>

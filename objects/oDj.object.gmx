@@ -32,7 +32,7 @@ global.VisGrav = false
 global.focus = noone
 instance_create(x,y,oMouse)
 next = false
-global.killdots = false
+global.killdots = true
 Gimerr = 0
 //audio_play_sound(MystOnTheMoor,1,true)
 
@@ -152,7 +152,7 @@ if (global.killdots) { if instance_exists(oDot) { with (oDot) { instance_destroy
         }
         
         
-        global.killdots = false
+        //global.killdots = false
         
         Gimerr += 1
         

@@ -159,7 +159,7 @@ monsters.
         dHealth = global.Health - ( global.Health / 5 )
         scale = 1
         Jspeed = 20
-        agil = 17
+        agil = 12
         ; break;
         case 12: sprite_index = sBeachGuy
         name = "Ron"

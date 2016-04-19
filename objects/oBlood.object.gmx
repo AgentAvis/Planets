@@ -29,6 +29,8 @@
 image_speed = 0
 image_index = random(floor(image_number))
 diz = 10
+color = c_red
+if global.gore { image_blend = c_red } else { image_blend = color }
 </string>
           </argument>
         </arguments>
@@ -51,7 +53,10 @@ diz = 10
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>image_alpha -= .05
+            <string>if global.gore { image_blend = c_red } else { image_blend = color }
+
+//image_alpha -= .05
+image_alpha -= .03
 
 if image_alpha &lt; .06 {
  
@@ -88,7 +93,7 @@ image_alpha = image_alpha * .5
 direction = point_direction(x,y,PlanetCol.x,PlanetCol.y) + 180 + random_range(-15,15)
 speed = speed * .75
 
-if random(5) &gt; 1 {
+if random(5) &gt; 1 and PlanetCol.dg = true {
     var dire;
     dire = point_direction(x,y,PlanetCol.x,PlanetCol.y)
     x += lengthdir_x(diz - 3,dire)
@@ -121,7 +126,7 @@ if distance_to_point(can.x,can.y) &lt; can.image_xscale * 64 + 1{
         
             if (instance_exists(oArtist)) {
                 surface_set_target(oArtist.surf);
-                draw_sprite_ext(sBlood, 0, x, y, image_xscale, image_yscale, image_angle, c_white, image_alpha);
+                draw_sprite_ext(sBlood, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
                 surface_reset_target(); 
                 instance_destroy() 
             }

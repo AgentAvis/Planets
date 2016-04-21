@@ -126,7 +126,8 @@ if distance_to_point(can.x,can.y) &lt; can.image_xscale * 64 + 1{
         
             if (instance_exists(oArtist)) {
                 surface_set_target(oArtist.surf);
-                draw_sprite_ext(sBlood, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+                if image_alpha &lt; .5 {alf = .4} else { alf = image_alpha }
+                draw_sprite_ext(sBlood, 0, x, y, image_xscale, image_yscale, image_angle, image_blend, alf);
                 surface_reset_target(); 
                 instance_destroy() 
             }

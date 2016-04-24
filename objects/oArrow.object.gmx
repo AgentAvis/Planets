@@ -234,7 +234,7 @@ if Hit { Alarm += 1 if Alarm &gt; 10 { Alarm = 0 Hit = false } }
 if instance_exists(HitPlayer) and !Hit {
     
     if HitPlayer.Id != Id {
-    
+          
         Hit = true
             
         with(HitPlayer) { Health -= other.Damage }

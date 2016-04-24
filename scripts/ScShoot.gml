@@ -48,6 +48,7 @@
     Ppdx = x + lengthdir_x(d,dr)
     Ppdy = y + lengthdir_y(d,dr)
     
+    ScImpact() 
     ScNext()
     
     }
@@ -80,44 +81,7 @@
     //global.focus = ScNext()
     
     jumped = true//ScNext()
-    
-    /*
-    if object_index = oPlayer1 {
-        if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
-        
-        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
-        
-        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
-        }}}
-    }
-    
-    if object_index = oPlayer2 {
-        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
-        
-        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
-        
-        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
-        }}}
-    }
-    
-    if object_index = oPlayer3 {
-        if instance_exists(oPlayer4) { global.focus = oPlayer4.id } else {
-        
-        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
-        
-        if instance_exists(oPlayer2) { global.focus = oPlayer.id } else {
-        }}}
-    }
-    
-    if object_index = oPlayer4 {
-        if instance_exists(oPlayer1) { global.focus = oPlayer1.id } else {
-        
-        if instance_exists(oPlayer2) { global.focus = oPlayer2.id } else {
-        
-        if instance_exists(oPlayer3) { global.focus = oPlayer3.id } else {
-        }}}
-    }  
-    */
+    audio_play_sound(aJump_1,1,false)
     }
 
     

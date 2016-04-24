@@ -5,7 +5,13 @@
   </Configs>
   <datafiles number="29" name="datafiles"/>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\aTheme</sound>
+    <sound>sound\aJump_1</sound>
+    <sound>sound\aSquib_1</sound>
+    <sound>sound\aSquib_2</sound>
+    <sound>sound\aSquib_3</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Projectiles">
       <sprite>sprites\sSeed</sprite>
@@ -110,6 +116,7 @@
     <script>scripts\ScPlayerStep.gml</script>
     <script>scripts\ScButton.gml</script>
     <script>scripts\ScStatSwitch.gml</script>
+    <script>scripts\ScImpact.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\oButton</object>

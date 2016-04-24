@@ -51,6 +51,8 @@ global.gore = true
 global.knockback = .75
 
 global.Flying = true
+
+audio_play_sound(aTheme,0,true)
 </string>
           </argument>
         </arguments>
